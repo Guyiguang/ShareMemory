@@ -58,51 +58,89 @@ int main()
 {
     try
     {
-        std::cout << "Shared Memory Producer Starting..." << std::endl;
+        std::cout << "Shared Memory Test Program Starting..." << std::endl;
         
-        // Create shared memory manager
+        // Create shared memory managers for producer and consumer
         const std::string memoryName = "TestSharedMemory";
         const size_t memorySize = 1024 * 1024 * 10; // 10MB
-        ShareMemoryManager sharedMemory(memoryName, memorySize);
         
-        if (!sharedMemory.Initialize())
+        // Create producer and consumer with the same memory name
+        ShareMemoryManager producer(memoryName, memorySize);
+        if (!producer.Initialize())
         {
-            std::cerr << "Failed to initialize shared memory" << std::endl;
+            std::cerr << "Failed to initialize producer shared memory" << std::endl;
             return 1;
         }
         
-        std::cout << "Shared memory initialized successfully, starting test data generation..." << std::endl;
+        // Create consumer with the same memory name
+        ShareMemoryManager consumer(memoryName, memorySize);
+        if (!consumer.Initialize())
+        {
+            std::cerr << "Failed to initialize consumer shared memory" << std::endl;
+            return 1;
+        }
+
+        // Set up consumer callback
+        consumer.SetDataReceivedCallback([](const uint8_t* data, size_t size, uint32_t dataType, uint32_t width, uint32_t height) {
+            std::cout << "\n[Consumer] Received data:"
+                     << "\n - Type: " << (dataType == 0 ? "Image" : "PointCloud")
+                     << "\n - Size: " << size << " bytes"
+                     << "\n - Width: " << width
+                     << "\n - Height: " << height
+                     << "\n - First byte: 0x" << std::hex << (int)data[0] 
+                     << std::dec << std::endl;
+        });
+
+        // Start consumer monitoring
+        consumer.StartMonitoring();
+        
+        std::cout << "Starting test data exchange..." << std::endl;
         
         bool isImage = true;
-        while (true)
+        int frameCount = 0;
+        const int totalFrames = 10; // Send 10 frames and then exit
+
+        while (frameCount < totalFrames)
         {
             std::vector<uint8_t> data;
+            uint32_t dataType, width, height, channels, dimensions;
+            
             if (isImage) {
                 // Generate 640x480 RGB test image
-                data = GenerateTestImage(640, 480, 3);
-                std::cout << "Preparing to write image data..." << std::endl;
+                channels = 3; // RGB image
+                data = GenerateTestImage(640, 480, channels);
+                dataType = 0; // Image
+                width = 640;
+                height = 480;
+                dimensions = 0; // Not used for images
+                std::cout << "Preparing to write RGB image data..." << std::endl;
             } else {
                 // Generate point cloud data with 1000 points
+                dimensions = 3; // XYZ point cloud
                 data = GenerateTestPointCloud(1000);
-                std::cout << "Preparing to write point cloud data..." << std::endl;
+                dataType = 1; // PointCloud
+                width = 1000; // Number of points
+                height = sizeof(float); // Size per component
+                channels = 0; // Not used for point clouds
+                std::cout << "Preparing to write XYZ point cloud data..." << std::endl;
             }
 
             // Try to write data
-            bool writeSuccess = sharedMemory.WriteData(data.data(), data.size());
+            bool writeSuccess = producer.WriteData(data.data(), dataType, width, height, channels, dimensions);
             
-            if (!writeSuccess) {
-                // If write fails, wait and retry
-                std::cout << "Write failed, waiting for data to be consumed..." << std::endl;
-                std::this_thread::sleep_for(std::chrono::milliseconds(100));
-                continue;
+            if (writeSuccess) {
+                frameCount++;
+                isImage = !isImage;
             }
-
-            // Switch data type after successful write
-            isImage = !isImage;
             
-            // Wait before sending next frame
+            // Wait before next frame
             std::this_thread::sleep_for(std::chrono::milliseconds(500));
         }
+
+        // Stop consumer monitoring
+        consumer.StopMonitoring();
+        
+        std::cout << "Test completed successfully." << std::endl;
     }
     catch (const std::exception& e)
     {

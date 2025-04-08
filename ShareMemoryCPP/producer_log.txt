@@ -18444,3 +18444,1017 @@
 2025-04-02 12:25:25 [Producer] Memory not empty, previous data not consumed
 2025-04-02 12:25:25 [Producer] Memory not empty, previous data not consumed
 2025-04-02 12:25:25 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:10 [Producer] ShareMemoryManager constructed
+2025-04-02 12:46:10 [Producer] Initializing shared memory
+2025-04-02 12:46:10 [Producer] Shared memory initialized successfully
+2025-04-02 12:46:10 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 1, Type: Image
+2025-04-02 12:46:11 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:11 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:11 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:11 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:11 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:11 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:11 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:12 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:12 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:12 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:12 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:12 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:12 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:12 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:12 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:12 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:12 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:13 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:13 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:13 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:13 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:13 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:13 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:13 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:13 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:13 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:14 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:14 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:14 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:14 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:14 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:14 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:14 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:14 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:14 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:15 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:15 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:15 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:15 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:15 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:15 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:15 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:15 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:15 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:16 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:16 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:16 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:16 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:16 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:16 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:16 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:16 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:16 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:17 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:17 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:17 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:17 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:17 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:17 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:17 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:17 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:17 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:17 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:18 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:18 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:18 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:18 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:18 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:18 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:18 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:18 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:18 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:19 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:19 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:19 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:19 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:19 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:19 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:19 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:46:19 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 2, Type: PointCloud
+2025-04-02 12:46:20 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 3, Type: Image
+2025-04-02 12:46:20 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 4, Type: PointCloud
+2025-04-02 12:46:21 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 5, Type: Image
+2025-04-02 12:46:21 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 6, Type: PointCloud
+2025-04-02 12:46:22 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 7, Type: Image
+2025-04-02 12:46:23 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 8, Type: PointCloud
+2025-04-02 12:46:23 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 9, Type: Image
+2025-04-02 12:46:24 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 10, Type: PointCloud
+2025-04-02 12:46:24 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 11, Type: Image
+2025-04-02 12:46:25 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 12, Type: PointCloud
+2025-04-02 12:46:25 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 13, Type: Image
+2025-04-02 12:46:26 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 14, Type: PointCloud
+2025-04-02 12:46:26 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 15, Type: Image
+2025-04-02 12:46:27 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 16, Type: PointCloud
+2025-04-02 12:46:27 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 17, Type: Image
+2025-04-02 12:46:28 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 18, Type: PointCloud
+2025-04-02 12:46:28 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 19, Type: Image
+2025-04-02 12:46:29 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 20, Type: PointCloud
+2025-04-02 12:46:29 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 21, Type: Image
+2025-04-02 12:46:30 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 22, Type: PointCloud
+2025-04-02 12:46:31 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 23, Type: Image
+2025-04-02 12:46:31 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 24, Type: PointCloud
+2025-04-02 12:46:32 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 25, Type: Image
+2025-04-02 12:46:32 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 26, Type: PointCloud
+2025-04-02 12:46:33 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 27, Type: Image
+2025-04-02 12:46:33 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 28, Type: PointCloud
+2025-04-02 12:46:34 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 29, Type: Image
+2025-04-02 12:46:34 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 30, Type: PointCloud
+2025-04-02 12:46:35 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 31, Type: Image
+2025-04-02 12:46:35 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 32, Type: PointCloud
+2025-04-02 12:46:36 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 33, Type: Image
+2025-04-02 12:46:36 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 34, Type: PointCloud
+2025-04-02 12:46:37 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 35, Type: Image
+2025-04-02 12:46:37 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 36, Type: PointCloud
+2025-04-02 12:46:38 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 37, Type: Image
+2025-04-02 12:46:39 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 38, Type: PointCloud
+2025-04-02 12:46:39 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 39, Type: Image
+2025-04-02 12:46:40 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 40, Type: PointCloud
+2025-04-02 12:46:40 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 41, Type: Image
+2025-04-02 12:46:41 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 42, Type: PointCloud
+2025-04-02 12:46:41 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 43, Type: Image
+2025-04-02 12:46:42 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 44, Type: PointCloud
+2025-04-02 12:46:42 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 45, Type: Image
+2025-04-02 12:46:43 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 46, Type: PointCloud
+2025-04-02 12:46:43 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 47, Type: Image
+2025-04-02 12:46:44 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 48, Type: PointCloud
+2025-04-02 12:46:44 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 49, Type: Image
+2025-04-02 12:46:45 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 50, Type: PointCloud
+2025-04-02 12:46:46 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 51, Type: Image
+2025-04-02 12:46:46 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 52, Type: PointCloud
+2025-04-02 12:46:47 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 53, Type: Image
+2025-04-02 12:46:47 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 54, Type: PointCloud
+2025-04-02 12:46:48 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 55, Type: Image
+2025-04-02 12:46:48 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 56, Type: PointCloud
+2025-04-02 12:46:49 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 57, Type: Image
+2025-04-02 12:46:49 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 58, Type: PointCloud
+2025-04-02 12:46:50 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 59, Type: Image
+2025-04-02 12:46:50 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 60, Type: PointCloud
+2025-04-02 12:46:51 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 61, Type: Image
+2025-04-02 12:46:51 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 62, Type: PointCloud
+2025-04-02 12:46:52 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 63, Type: Image
+2025-04-02 12:46:52 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 64, Type: PointCloud
+2025-04-02 12:46:53 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 65, Type: Image
+2025-04-02 12:46:54 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 66, Type: PointCloud
+2025-04-02 12:46:54 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 67, Type: Image
+2025-04-02 12:46:55 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 68, Type: PointCloud
+2025-04-02 12:46:55 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 69, Type: Image
+2025-04-02 12:46:56 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 70, Type: PointCloud
+2025-04-02 12:46:56 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 71, Type: Image
+2025-04-02 12:46:57 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 72, Type: PointCloud
+2025-04-02 12:46:57 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 73, Type: Image
+2025-04-02 12:46:58 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 74, Type: PointCloud
+2025-04-02 12:46:58 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 75, Type: Image
+2025-04-02 12:46:59 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 76, Type: PointCloud
+2025-04-02 12:46:59 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 77, Type: Image
+2025-04-02 12:47:00 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 78, Type: PointCloud
+2025-04-02 12:47:00 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 79, Type: Image
+2025-04-02 12:47:01 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 80, Type: PointCloud
+2025-04-02 12:47:02 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 81, Type: Image
+2025-04-02 12:47:02 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 82, Type: PointCloud
+2025-04-02 12:47:03 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 83, Type: Image
+2025-04-02 12:47:03 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 84, Type: PointCloud
+2025-04-02 12:47:04 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 85, Type: Image
+2025-04-02 12:47:04 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 86, Type: PointCloud
+2025-04-02 12:47:05 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 87, Type: Image
+2025-04-02 12:47:05 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 88, Type: PointCloud
+2025-04-02 12:47:06 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 89, Type: Image
+2025-04-02 12:47:06 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 90, Type: PointCloud
+2025-04-02 12:47:07 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 91, Type: Image
+2025-04-02 12:47:07 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 92, Type: PointCloud
+2025-04-02 12:47:08 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 93, Type: Image
+2025-04-02 12:47:08 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 94, Type: PointCloud
+2025-04-02 12:47:09 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 95, Type: Image
+2025-04-02 12:47:10 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 96, Type: PointCloud
+2025-04-02 12:47:10 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 97, Type: Image
+2025-04-02 12:47:11 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 98, Type: PointCloud
+2025-04-02 12:47:11 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 99, Type: Image
+2025-04-02 12:47:12 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 100, Type: PointCloud
+2025-04-02 12:47:12 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 101, Type: Image
+2025-04-02 12:47:13 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 102, Type: PointCloud
+2025-04-02 12:47:13 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 103, Type: Image
+2025-04-02 12:47:14 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 104, Type: PointCloud
+2025-04-02 12:47:14 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 105, Type: Image
+2025-04-02 12:47:15 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 106, Type: PointCloud
+2025-04-02 12:47:15 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 107, Type: Image
+2025-04-02 12:47:16 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 108, Type: PointCloud
+2025-04-02 12:47:16 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 109, Type: Image
+2025-04-02 12:47:17 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 110, Type: PointCloud
+2025-04-02 12:47:18 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 111, Type: Image
+2025-04-02 12:47:18 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 112, Type: PointCloud
+2025-04-02 12:47:19 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 113, Type: Image
+2025-04-02 12:47:19 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 114, Type: PointCloud
+2025-04-02 12:47:20 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 115, Type: Image
+2025-04-02 12:47:20 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 116, Type: PointCloud
+2025-04-02 12:47:21 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 117, Type: Image
+2025-04-02 12:47:21 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 118, Type: PointCloud
+2025-04-02 12:47:22 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 119, Type: Image
+2025-04-02 12:47:22 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 120, Type: PointCloud
+2025-04-02 12:47:23 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 121, Type: Image
+2025-04-02 12:47:23 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 122, Type: PointCloud
+2025-04-02 12:47:24 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 123, Type: Image
+2025-04-02 12:47:24 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 124, Type: PointCloud
+2025-04-02 12:47:25 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 125, Type: Image
+2025-04-02 12:47:26 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 126, Type: PointCloud
+2025-04-02 12:47:26 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 127, Type: Image
+2025-04-02 12:47:27 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 128, Type: PointCloud
+2025-04-02 12:47:27 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 129, Type: Image
+2025-04-02 12:47:28 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 130, Type: PointCloud
+2025-04-02 12:47:28 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 131, Type: Image
+2025-04-02 12:47:29 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 132, Type: PointCloud
+2025-04-02 12:47:29 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 133, Type: Image
+2025-04-02 12:47:30 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 134, Type: PointCloud
+2025-04-02 12:47:30 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 135, Type: Image
+2025-04-02 12:47:31 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 136, Type: PointCloud
+2025-04-02 12:47:31 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 137, Type: Image
+2025-04-02 12:47:32 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 138, Type: PointCloud
+2025-04-02 12:47:33 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 139, Type: Image
+2025-04-02 12:47:33 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 140, Type: PointCloud
+2025-04-02 12:47:34 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 141, Type: Image
+2025-04-02 12:47:34 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 142, Type: PointCloud
+2025-04-02 12:47:35 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 143, Type: Image
+2025-04-02 12:47:35 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 144, Type: PointCloud
+2025-04-02 12:47:36 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 145, Type: Image
+2025-04-02 12:47:36 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 146, Type: PointCloud
+2025-04-02 12:47:37 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 147, Type: Image
+2025-04-02 12:47:37 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 148, Type: PointCloud
+2025-04-02 12:47:38 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 149, Type: Image
+2025-04-02 12:47:38 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 150, Type: PointCloud
+2025-04-02 12:47:39 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 151, Type: Image
+2025-04-02 12:47:39 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 152, Type: PointCloud
+2025-04-02 12:47:40 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 153, Type: Image
+2025-04-02 12:47:41 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 154, Type: PointCloud
+2025-04-02 12:47:41 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 155, Type: Image
+2025-04-02 12:47:42 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 156, Type: PointCloud
+2025-04-02 12:47:42 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 157, Type: Image
+2025-04-02 12:47:43 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 158, Type: PointCloud
+2025-04-02 12:47:43 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 159, Type: Image
+2025-04-02 12:47:44 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 160, Type: PointCloud
+2025-04-02 12:47:44 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 161, Type: Image
+2025-04-02 12:47:45 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 162, Type: PointCloud
+2025-04-02 12:47:45 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 163, Type: Image
+2025-04-02 12:47:46 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 164, Type: PointCloud
+2025-04-02 12:47:46 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 165, Type: Image
+2025-04-02 12:47:47 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 166, Type: PointCloud
+2025-04-02 12:47:47 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 167, Type: Image
+2025-04-02 12:47:48 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 168, Type: PointCloud
+2025-04-02 12:47:49 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 169, Type: Image
+2025-04-02 12:47:49 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 170, Type: PointCloud
+2025-04-02 12:47:50 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 171, Type: Image
+2025-04-02 12:47:50 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 172, Type: PointCloud
+2025-04-02 12:47:51 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 173, Type: Image
+2025-04-02 12:47:51 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 174, Type: PointCloud
+2025-04-02 12:47:52 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 175, Type: Image
+2025-04-02 12:47:52 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 176, Type: PointCloud
+2025-04-02 12:47:53 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 177, Type: Image
+2025-04-02 12:47:53 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 178, Type: PointCloud
+2025-04-02 12:47:54 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 179, Type: Image
+2025-04-02 12:47:54 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 180, Type: PointCloud
+2025-04-02 12:47:55 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 181, Type: Image
+2025-04-02 12:47:55 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 182, Type: PointCloud
+2025-04-02 12:47:56 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 183, Type: Image
+2025-04-02 12:47:57 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 184, Type: PointCloud
+2025-04-02 12:47:57 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 185, Type: Image
+2025-04-02 12:47:58 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 186, Type: PointCloud
+2025-04-02 12:47:58 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 187, Type: Image
+2025-04-02 12:47:59 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 188, Type: PointCloud
+2025-04-02 12:47:59 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 189, Type: Image
+2025-04-02 12:48:00 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 190, Type: PointCloud
+2025-04-02 12:48:00 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 191, Type: Image
+2025-04-02 12:48:01 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 192, Type: PointCloud
+2025-04-02 12:48:01 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 193, Type: Image
+2025-04-02 12:48:02 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 194, Type: PointCloud
+2025-04-02 12:48:02 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 195, Type: Image
+2025-04-02 12:48:03 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 196, Type: PointCloud
+2025-04-02 12:48:04 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 197, Type: Image
+2025-04-02 12:48:04 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 198, Type: PointCloud
+2025-04-02 12:48:05 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 199, Type: Image
+2025-04-02 12:48:05 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 200, Type: PointCloud
+2025-04-02 12:48:06 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 201, Type: Image
+2025-04-02 12:48:06 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 202, Type: PointCloud
+2025-04-02 12:48:07 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 203, Type: Image
+2025-04-02 12:48:07 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 204, Type: PointCloud
+2025-04-02 12:48:08 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 205, Type: Image
+2025-04-02 12:48:08 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 206, Type: PointCloud
+2025-04-02 12:48:09 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 207, Type: Image
+2025-04-02 12:48:09 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 208, Type: PointCloud
+2025-04-02 12:48:10 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 209, Type: Image
+2025-04-02 12:48:10 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 210, Type: PointCloud
+2025-04-02 12:48:11 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 211, Type: Image
+2025-04-02 12:48:12 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 212, Type: PointCloud
+2025-04-02 12:48:12 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 213, Type: Image
+2025-04-02 12:48:13 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 214, Type: PointCloud
+2025-04-02 12:48:13 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 215, Type: Image
+2025-04-02 12:48:14 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 216, Type: PointCloud
+2025-04-02 12:48:14 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 217, Type: Image
+2025-04-02 12:48:15 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 218, Type: PointCloud
+2025-04-02 12:48:15 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 219, Type: Image
+2025-04-02 12:48:16 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 220, Type: PointCloud
+2025-04-02 12:48:16 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 221, Type: Image
+2025-04-02 12:48:17 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 222, Type: PointCloud
+2025-04-02 12:48:17 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 223, Type: Image
+2025-04-02 12:48:18 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 224, Type: PointCloud
+2025-04-02 12:48:19 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 225, Type: Image
+2025-04-02 12:48:19 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 226, Type: PointCloud
+2025-04-02 12:48:20 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 227, Type: Image
+2025-04-02 12:48:20 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 228, Type: PointCloud
+2025-04-02 12:48:21 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 229, Type: Image
+2025-04-02 12:48:21 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 230, Type: PointCloud
+2025-04-02 12:48:22 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 231, Type: Image
+2025-04-02 12:48:22 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 232, Type: PointCloud
+2025-04-02 12:48:23 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 233, Type: Image
+2025-04-02 12:48:23 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 234, Type: PointCloud
+2025-04-02 12:48:24 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 235, Type: Image
+2025-04-02 12:48:24 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 236, Type: PointCloud
+2025-04-02 12:48:25 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 237, Type: Image
+2025-04-02 12:48:25 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 238, Type: PointCloud
+2025-04-02 12:48:26 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 239, Type: Image
+2025-04-02 12:48:27 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 240, Type: PointCloud
+2025-04-02 12:48:27 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 241, Type: Image
+2025-04-02 12:48:28 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 242, Type: PointCloud
+2025-04-02 12:48:28 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 243, Type: Image
+2025-04-02 12:48:29 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 244, Type: PointCloud
+2025-04-02 12:48:29 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 245, Type: Image
+2025-04-02 12:48:30 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 246, Type: PointCloud
+2025-04-02 12:48:31 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 247, Type: Image
+2025-04-02 12:48:31 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 248, Type: PointCloud
+2025-04-02 12:48:32 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 249, Type: Image
+2025-04-02 12:48:32 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 250, Type: PointCloud
+2025-04-02 12:48:33 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 251, Type: Image
+2025-04-02 12:48:33 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 252, Type: PointCloud
+2025-04-02 12:48:34 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 253, Type: Image
+2025-04-02 12:48:34 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 254, Type: PointCloud
+2025-04-02 12:48:35 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 255, Type: Image
+2025-04-02 12:48:36 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 256, Type: PointCloud
+2025-04-02 12:48:36 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 257, Type: Image
+2025-04-02 12:48:37 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 258, Type: PointCloud
+2025-04-02 12:48:37 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 259, Type: Image
+2025-04-02 12:48:38 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 260, Type: PointCloud
+2025-04-02 12:48:38 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 261, Type: Image
+2025-04-02 12:48:39 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 262, Type: PointCloud
+2025-04-02 12:48:40 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 263, Type: Image
+2025-04-02 12:48:40 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 264, Type: PointCloud
+2025-04-02 12:48:41 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 265, Type: Image
+2025-04-02 12:48:41 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 266, Type: PointCloud
+2025-04-02 12:48:42 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 267, Type: Image
+2025-04-02 12:48:42 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 268, Type: PointCloud
+2025-04-02 12:48:43 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 269, Type: Image
+2025-04-02 12:48:43 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 270, Type: PointCloud
+2025-04-02 12:48:44 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 271, Type: Image
+2025-04-02 12:48:45 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 272, Type: PointCloud
+2025-04-02 12:48:45 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 273, Type: Image
+2025-04-02 12:48:46 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 274, Type: PointCloud
+2025-04-02 12:48:46 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 275, Type: Image
+2025-04-02 12:48:47 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 276, Type: PointCloud
+2025-04-02 12:48:47 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 277, Type: Image
+2025-04-02 12:48:48 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 278, Type: PointCloud
+2025-04-02 12:48:48 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 279, Type: Image
+2025-04-02 12:48:49 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 280, Type: PointCloud
+2025-04-02 12:48:50 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 281, Type: Image
+2025-04-02 12:48:50 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 282, Type: PointCloud
+2025-04-02 12:48:51 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 283, Type: Image
+2025-04-02 12:48:51 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 284, Type: PointCloud
+2025-04-02 12:48:52 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 285, Type: Image
+2025-04-02 12:48:52 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 286, Type: PointCloud
+2025-04-02 12:48:53 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 287, Type: Image
+2025-04-02 12:48:53 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 288, Type: PointCloud
+2025-04-02 12:48:54 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 289, Type: Image
+2025-04-02 12:48:55 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 290, Type: PointCloud
+2025-04-02 12:48:55 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 291, Type: Image
+2025-04-02 12:48:56 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 292, Type: PointCloud
+2025-04-02 12:48:56 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 293, Type: Image
+2025-04-02 12:48:57 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 294, Type: PointCloud
+2025-04-02 12:48:57 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 295, Type: Image
+2025-04-02 12:48:58 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 296, Type: PointCloud
+2025-04-02 12:48:58 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 297, Type: Image
+2025-04-02 12:48:59 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 298, Type: PointCloud
+2025-04-02 12:49:00 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 299, Type: Image
+2025-04-02 12:49:00 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 300, Type: PointCloud
+2025-04-02 12:49:01 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 301, Type: Image
+2025-04-02 12:49:01 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 302, Type: PointCloud
+2025-04-02 12:49:02 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 303, Type: Image
+2025-04-02 12:49:02 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 304, Type: PointCloud
+2025-04-02 12:49:03 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 305, Type: Image
+2025-04-02 12:49:03 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 306, Type: PointCloud
+2025-04-02 12:49:04 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 307, Type: Image
+2025-04-02 12:49:05 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 308, Type: PointCloud
+2025-04-02 12:49:05 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 309, Type: Image
+2025-04-02 12:49:06 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 310, Type: PointCloud
+2025-04-02 12:49:06 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 311, Type: Image
+2025-04-02 12:49:07 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 312, Type: PointCloud
+2025-04-02 12:49:07 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 313, Type: Image
+2025-04-02 12:49:08 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 314, Type: PointCloud
+2025-04-02 12:49:08 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 315, Type: Image
+2025-04-02 12:49:09 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 316, Type: PointCloud
+2025-04-02 12:49:10 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 317, Type: Image
+2025-04-02 12:49:10 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 318, Type: PointCloud
+2025-04-02 12:49:11 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 319, Type: Image
+2025-04-02 12:49:11 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 320, Type: PointCloud
+2025-04-02 12:49:12 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 321, Type: Image
+2025-04-02 12:49:12 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 322, Type: PointCloud
+2025-04-02 12:49:13 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 323, Type: Image
+2025-04-02 12:49:13 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 324, Type: PointCloud
+2025-04-02 12:49:14 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 325, Type: Image
+2025-04-02 12:49:15 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 326, Type: PointCloud
+2025-04-02 12:49:15 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 327, Type: Image
+2025-04-02 12:49:16 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 328, Type: PointCloud
+2025-04-02 12:49:16 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 329, Type: Image
+2025-04-02 12:49:17 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 330, Type: PointCloud
+2025-04-02 12:49:17 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 331, Type: Image
+2025-04-02 12:49:18 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 332, Type: PointCloud
+2025-04-02 12:49:19 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 333, Type: Image
+2025-04-02 12:49:19 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 334, Type: PointCloud
+2025-04-02 12:49:20 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 335, Type: Image
+2025-04-02 12:49:20 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 336, Type: PointCloud
+2025-04-02 12:49:21 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 337, Type: Image
+2025-04-02 12:49:21 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 338, Type: PointCloud
+2025-04-02 12:49:22 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 339, Type: Image
+2025-04-02 12:49:22 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 340, Type: PointCloud
+2025-04-02 12:49:23 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 341, Type: Image
+2025-04-02 12:49:23 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 342, Type: PointCloud
+2025-04-02 12:49:24 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 343, Type: Image
+2025-04-02 12:49:25 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 344, Type: PointCloud
+2025-04-02 12:49:25 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 345, Type: Image
+2025-04-02 12:49:26 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 346, Type: PointCloud
+2025-04-02 12:49:26 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 347, Type: Image
+2025-04-02 12:49:27 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 348, Type: PointCloud
+2025-04-02 12:49:27 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 349, Type: Image
+2025-04-02 12:49:28 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 350, Type: PointCloud
+2025-04-02 12:49:29 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 351, Type: Image
+2025-04-02 12:49:29 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 352, Type: PointCloud
+2025-04-02 12:49:30 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 353, Type: Image
+2025-04-02 12:49:30 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 354, Type: PointCloud
+2025-04-02 12:49:31 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 355, Type: Image
+2025-04-02 12:49:31 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 356, Type: PointCloud
+2025-04-02 12:49:32 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 357, Type: Image
+2025-04-02 12:49:32 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 358, Type: PointCloud
+2025-04-02 12:49:33 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 359, Type: Image
+2025-04-02 12:49:33 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 360, Type: PointCloud
+2025-04-02 12:49:34 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 361, Type: Image
+2025-04-02 12:49:35 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 362, Type: PointCloud
+2025-04-02 12:49:35 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 363, Type: Image
+2025-04-02 12:49:36 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 364, Type: PointCloud
+2025-04-02 12:49:36 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 365, Type: Image
+2025-04-02 12:49:37 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 366, Type: PointCloud
+2025-04-02 12:49:37 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 367, Type: Image
+2025-04-02 12:49:38 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 368, Type: PointCloud
+2025-04-02 12:49:39 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 369, Type: Image
+2025-04-02 12:49:39 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 370, Type: PointCloud
+2025-04-02 12:49:40 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 371, Type: Image
+2025-04-02 12:49:40 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 372, Type: PointCloud
+2025-04-02 12:49:41 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 373, Type: Image
+2025-04-02 12:49:41 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 374, Type: PointCloud
+2025-04-02 12:49:42 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 375, Type: Image
+2025-04-02 12:49:42 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 376, Type: PointCloud
+2025-04-02 12:49:43 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 377, Type: Image
+2025-04-02 12:49:44 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 378, Type: PointCloud
+2025-04-02 12:49:44 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 379, Type: Image
+2025-04-02 12:49:45 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 380, Type: PointCloud
+2025-04-02 12:49:45 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 381, Type: Image
+2025-04-02 12:49:46 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 382, Type: PointCloud
+2025-04-02 12:49:46 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 383, Type: Image
+2025-04-02 12:49:47 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 384, Type: PointCloud
+2025-04-02 12:49:48 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 385, Type: Image
+2025-04-02 12:49:48 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 386, Type: PointCloud
+2025-04-02 12:49:49 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 387, Type: Image
+2025-04-02 12:49:49 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 388, Type: PointCloud
+2025-04-02 12:49:50 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 389, Type: Image
+2025-04-02 12:49:50 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 390, Type: PointCloud
+2025-04-02 12:49:51 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 391, Type: Image
+2025-04-02 12:49:51 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 392, Type: PointCloud
+2025-04-02 12:49:52 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 393, Type: Image
+2025-04-02 12:49:52 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 394, Type: PointCloud
+2025-04-02 12:49:53 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 395, Type: Image
+2025-04-02 12:49:54 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 396, Type: PointCloud
+2025-04-02 12:49:54 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 397, Type: Image
+2025-04-02 12:49:55 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 398, Type: PointCloud
+2025-04-02 12:49:55 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 399, Type: Image
+2025-04-02 12:49:56 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 400, Type: PointCloud
+2025-04-02 12:49:56 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 401, Type: Image
+2025-04-02 12:49:57 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 402, Type: PointCloud
+2025-04-02 12:49:58 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 403, Type: Image
+2025-04-02 12:49:58 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 404, Type: PointCloud
+2025-04-02 12:49:59 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 405, Type: Image
+2025-04-02 12:49:59 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 406, Type: PointCloud
+2025-04-02 12:50:00 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 407, Type: Image
+2025-04-02 12:50:00 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 408, Type: PointCloud
+2025-04-02 12:50:01 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 409, Type: Image
+2025-04-02 12:50:01 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 410, Type: PointCloud
+2025-04-02 12:50:02 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 411, Type: Image
+2025-04-02 12:50:03 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 412, Type: PointCloud
+2025-04-02 12:50:03 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 413, Type: Image
+2025-04-02 12:50:04 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 414, Type: PointCloud
+2025-04-02 12:50:04 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 415, Type: Image
+2025-04-02 12:50:05 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 416, Type: PointCloud
+2025-04-02 12:50:05 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 417, Type: Image
+2025-04-02 12:50:06 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 418, Type: PointCloud
+2025-04-02 12:50:06 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 419, Type: Image
+2025-04-02 12:50:07 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 420, Type: PointCloud
+2025-04-02 12:50:08 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 421, Type: Image
+2025-04-02 12:50:08 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 422, Type: PointCloud
+2025-04-02 12:50:09 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 423, Type: Image
+2025-04-02 12:50:09 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 424, Type: PointCloud
+2025-04-02 12:50:10 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 425, Type: Image
+2025-04-02 12:50:10 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 426, Type: PointCloud
+2025-04-02 12:50:11 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 427, Type: Image
+2025-04-02 12:50:11 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 428, Type: PointCloud
+2025-04-02 12:50:12 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 429, Type: Image
+2025-04-02 12:50:13 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 430, Type: PointCloud
+2025-04-02 12:50:13 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 431, Type: Image
+2025-04-02 12:50:14 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 432, Type: PointCloud
+2025-04-02 12:50:14 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 433, Type: Image
+2025-04-02 12:50:15 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 434, Type: PointCloud
+2025-04-02 12:50:15 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 435, Type: Image
+2025-04-02 12:50:16 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 436, Type: PointCloud
+2025-04-02 12:50:16 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 437, Type: Image
+2025-04-02 12:50:17 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 438, Type: PointCloud
+2025-04-02 12:50:18 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 439, Type: Image
+2025-04-02 12:50:18 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 440, Type: PointCloud
+2025-04-02 12:50:19 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 441, Type: Image
+2025-04-02 12:50:19 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 442, Type: PointCloud
+2025-04-02 12:50:20 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 443, Type: Image
+2025-04-02 12:50:20 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 444, Type: PointCloud
+2025-04-02 12:50:21 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 445, Type: Image
+2025-04-02 12:50:21 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 446, Type: PointCloud
+2025-04-02 12:50:22 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 447, Type: Image
+2025-04-02 12:50:23 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 448, Type: PointCloud
+2025-04-02 12:50:23 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 449, Type: Image
+2025-04-02 12:50:24 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 450, Type: PointCloud
+2025-04-02 12:50:24 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 451, Type: Image
+2025-04-02 12:50:25 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 452, Type: PointCloud
+2025-04-02 12:50:25 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 453, Type: Image
+2025-04-02 12:50:26 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 454, Type: PointCloud
+2025-04-02 12:50:26 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 455, Type: Image
+2025-04-02 12:50:27 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 456, Type: PointCloud
+2025-04-02 12:50:28 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 457, Type: Image
+2025-04-02 12:50:28 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 458, Type: PointCloud
+2025-04-02 12:50:29 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 459, Type: Image
+2025-04-02 12:50:29 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 460, Type: PointCloud
+2025-04-02 12:50:30 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 461, Type: Image
+2025-04-02 12:50:30 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 462, Type: PointCloud
+2025-04-02 12:50:31 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 463, Type: Image
+2025-04-02 12:50:31 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 464, Type: PointCloud
+2025-04-02 12:50:32 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 465, Type: Image
+2025-04-02 12:50:32 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 466, Type: PointCloud
+2025-04-02 12:50:33 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 467, Type: Image
+2025-04-02 12:50:34 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 468, Type: PointCloud
+2025-04-02 12:50:34 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 469, Type: Image
+2025-04-02 12:50:35 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 470, Type: PointCloud
+2025-04-02 12:50:35 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 471, Type: Image
+2025-04-02 12:50:36 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 472, Type: PointCloud
+2025-04-02 12:50:36 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 473, Type: Image
+2025-04-02 12:50:37 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 474, Type: PointCloud
+2025-04-02 12:50:38 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 475, Type: Image
+2025-04-02 12:50:38 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 476, Type: PointCloud
+2025-04-02 12:50:39 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 477, Type: Image
+2025-04-02 12:50:39 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 478, Type: PointCloud
+2025-04-02 12:50:40 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 479, Type: Image
+2025-04-02 12:50:40 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 480, Type: PointCloud
+2025-04-02 12:50:41 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 481, Type: Image
+2025-04-02 12:50:41 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 482, Type: PointCloud
+2025-04-02 12:50:42 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 483, Type: Image
+2025-04-02 12:50:43 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 484, Type: PointCloud
+2025-04-02 12:50:43 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 485, Type: Image
+2025-04-02 12:50:44 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 486, Type: PointCloud
+2025-04-02 12:50:44 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 487, Type: Image
+2025-04-02 12:50:45 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 488, Type: PointCloud
+2025-04-02 12:50:45 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 489, Type: Image
+2025-04-02 12:50:46 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 490, Type: PointCloud
+2025-04-02 12:50:47 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 491, Type: Image
+2025-04-02 12:50:47 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 492, Type: PointCloud
+2025-04-02 12:50:48 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 493, Type: Image
+2025-04-02 12:50:48 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 494, Type: PointCloud
+2025-04-02 12:50:49 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 495, Type: Image
+2025-04-02 12:50:49 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 496, Type: PointCloud
+2025-04-02 12:50:50 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 497, Type: Image
+2025-04-02 12:50:50 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 498, Type: PointCloud
+2025-04-02 12:50:51 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 499, Type: Image
+2025-04-02 12:50:52 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 500, Type: PointCloud
+2025-04-02 12:50:52 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 501, Type: Image
+2025-04-02 12:50:53 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 502, Type: PointCloud
+2025-04-02 12:50:53 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 503, Type: Image
+2025-04-02 12:50:54 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 504, Type: PointCloud
+2025-04-02 12:50:54 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 505, Type: Image
+2025-04-02 12:50:55 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 506, Type: PointCloud
+2025-04-02 12:50:55 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 507, Type: Image
+2025-04-02 12:50:56 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 508, Type: PointCloud
+2025-04-02 12:50:57 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 509, Type: Image
+2025-04-02 12:50:57 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 510, Type: PointCloud
+2025-04-02 12:50:58 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 511, Type: Image
+2025-04-02 12:50:58 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 512, Type: PointCloud
+2025-04-02 12:50:59 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 513, Type: Image
+2025-04-02 12:50:59 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 514, Type: PointCloud
+2025-04-02 12:51:00 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 515, Type: Image
+2025-04-02 12:51:00 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 516, Type: PointCloud
+2025-04-02 12:51:01 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 517, Type: Image
+2025-04-02 12:51:01 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 518, Type: PointCloud
+2025-04-02 12:51:02 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 519, Type: Image
+2025-04-02 12:51:03 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 520, Type: PointCloud
+2025-04-02 12:51:03 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 521, Type: Image
+2025-04-02 12:51:04 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 522, Type: PointCloud
+2025-04-02 12:51:04 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 523, Type: Image
+2025-04-02 12:51:05 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 524, Type: PointCloud
+2025-04-02 12:51:05 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 525, Type: Image
+2025-04-02 12:51:06 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 526, Type: PointCloud
+2025-04-02 12:51:07 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 527, Type: Image
+2025-04-02 12:51:07 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 528, Type: PointCloud
+2025-04-02 12:51:08 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 529, Type: Image
+2025-04-02 12:51:08 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 530, Type: PointCloud
+2025-04-02 12:51:09 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 531, Type: Image
+2025-04-02 12:51:09 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 532, Type: PointCloud
+2025-04-02 12:51:10 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 533, Type: Image
+2025-04-02 12:51:10 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 534, Type: PointCloud
+2025-04-02 12:51:11 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 535, Type: Image
+2025-04-02 12:51:12 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 536, Type: PointCloud
+2025-04-02 12:51:12 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 537, Type: Image
+2025-04-02 12:51:13 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 538, Type: PointCloud
+2025-04-02 12:51:13 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 539, Type: Image
+2025-04-02 12:51:14 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 540, Type: PointCloud
+2025-04-02 12:51:14 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 541, Type: Image
+2025-04-02 12:51:15 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 542, Type: PointCloud
+2025-04-02 12:51:15 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 543, Type: Image
+2025-04-02 12:51:16 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 544, Type: PointCloud
+2025-04-02 12:51:17 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 545, Type: Image
+2025-04-02 12:51:17 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 546, Type: PointCloud
+2025-04-02 12:51:18 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 547, Type: Image
+2025-04-02 12:51:18 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 548, Type: PointCloud
+2025-04-02 12:51:19 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 549, Type: Image
+2025-04-02 12:51:19 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 550, Type: PointCloud
+2025-04-02 12:51:20 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 551, Type: Image
+2025-04-02 12:51:21 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 552, Type: PointCloud
+2025-04-02 12:51:21 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 553, Type: Image
+2025-04-02 12:51:22 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 554, Type: PointCloud
+2025-04-02 12:51:22 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 555, Type: Image
+2025-04-02 12:51:23 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 556, Type: PointCloud
+2025-04-02 12:51:23 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 557, Type: Image
+2025-04-02 12:51:24 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 558, Type: PointCloud
+2025-04-02 12:51:25 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 559, Type: Image
+2025-04-02 12:51:25 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 560, Type: PointCloud
+2025-04-02 12:51:26 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 561, Type: Image
+2025-04-02 12:51:26 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 562, Type: PointCloud
+2025-04-02 12:51:27 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 563, Type: Image
+2025-04-02 12:51:27 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 564, Type: PointCloud
+2025-04-02 12:51:28 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 565, Type: Image
+2025-04-02 12:51:28 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 566, Type: PointCloud
+2025-04-02 12:51:29 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 567, Type: Image
+2025-04-02 12:51:29 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 568, Type: PointCloud
+2025-04-02 12:51:30 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 569, Type: Image
+2025-04-02 12:51:31 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 570, Type: PointCloud
+2025-04-02 12:51:31 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 571, Type: Image
+2025-04-02 12:51:32 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 572, Type: PointCloud
+2025-04-02 12:51:32 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 573, Type: Image
+2025-04-02 12:51:33 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 574, Type: PointCloud
+2025-04-02 12:51:33 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 575, Type: Image
+2025-04-02 12:51:34 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 576, Type: PointCloud
+2025-04-02 12:51:35 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 577, Type: Image
+2025-04-02 12:51:35 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 578, Type: PointCloud
+2025-04-02 12:51:36 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 579, Type: Image
+2025-04-02 12:51:36 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 580, Type: PointCloud
+2025-04-02 12:51:37 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 581, Type: Image
+2025-04-02 12:51:37 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 582, Type: PointCloud
+2025-04-02 12:51:38 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 583, Type: Image
+2025-04-02 12:51:38 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 584, Type: PointCloud
+2025-04-02 12:51:39 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 585, Type: Image
+2025-04-02 12:51:39 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 586, Type: PointCloud
+2025-04-02 12:51:40 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 587, Type: Image
+2025-04-02 12:51:41 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 588, Type: PointCloud
+2025-04-02 12:51:41 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 589, Type: Image
+2025-04-02 12:51:42 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 590, Type: PointCloud
+2025-04-02 12:51:42 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 591, Type: Image
+2025-04-02 12:51:43 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 592, Type: PointCloud
+2025-04-02 12:51:44 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 593, Type: Image
+2025-04-02 12:51:44 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 594, Type: PointCloud
+2025-04-02 12:51:45 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 595, Type: Image
+2025-04-02 12:51:45 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 596, Type: PointCloud
+2025-04-02 12:51:46 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 597, Type: Image
+2025-04-02 12:51:46 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 598, Type: PointCloud
+2025-04-02 12:51:47 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 599, Type: Image
+2025-04-02 12:51:47 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 600, Type: PointCloud
+2025-04-02 12:51:48 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 601, Type: Image
+2025-04-02 12:51:48 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 602, Type: PointCloud
+2025-04-02 12:51:49 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 603, Type: Image
+2025-04-02 12:51:50 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 604, Type: PointCloud
+2025-04-02 12:51:50 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 605, Type: Image
+2025-04-02 12:51:51 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 606, Type: PointCloud
+2025-04-02 12:51:51 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 607, Type: Image
+2025-04-02 12:51:52 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 608, Type: PointCloud
+2025-04-02 12:51:52 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 609, Type: Image
+2025-04-02 12:51:53 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 610, Type: PointCloud
+2025-04-02 12:51:53 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 611, Type: Image
+2025-04-02 12:51:54 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 612, Type: PointCloud
+2025-04-02 12:51:55 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 613, Type: Image
+2025-04-02 12:51:55 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 614, Type: PointCloud
+2025-04-02 12:51:56 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 615, Type: Image
+2025-04-02 12:51:56 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 616, Type: PointCloud
+2025-04-02 12:51:57 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 617, Type: Image
+2025-04-02 12:51:57 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 618, Type: PointCloud
+2025-04-02 12:51:58 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 619, Type: Image
+2025-04-02 12:51:58 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 620, Type: PointCloud
+2025-04-02 12:51:59 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 621, Type: Image
+2025-04-02 12:51:59 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 622, Type: PointCloud
+2025-04-02 12:52:00 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 623, Type: Image
+2025-04-02 12:52:00 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 624, Type: PointCloud
+2025-04-02 12:52:01 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 625, Type: Image
+2025-04-02 12:52:02 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 626, Type: PointCloud
+2025-04-02 12:52:02 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 627, Type: Image
+2025-04-02 12:52:03 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 628, Type: PointCloud
+2025-04-02 12:52:03 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 629, Type: Image
+2025-04-02 12:52:04 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 630, Type: PointCloud
+2025-04-02 12:52:04 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 631, Type: Image
+2025-04-02 12:52:05 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 632, Type: PointCloud
+2025-04-02 12:52:05 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 633, Type: Image
+2025-04-02 12:52:06 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 634, Type: PointCloud
+2025-04-02 12:52:07 [Producer] Memory not empty, previous data not consumed
+2025-04-02 12:52:07 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:33 [Producer] ShareMemoryManager constructed
+2025-04-08 09:38:33 [Producer] Initializing shared memory
+2025-04-08 09:38:33 [Producer] Shared memory initialized successfully
+2025-04-08 09:38:33 [Producer] ShareMemoryManager constructed
+2025-04-08 09:38:33 [Producer] Initializing shared memory
+2025-04-08 09:38:33 [Producer] Shared memory initialized successfully
+2025-04-08 09:38:33 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 1, Type: Image
+2025-04-08 09:38:33 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:34 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:34 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:35 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:35 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:36 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:36 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:37 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:37 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:38 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:39 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:39 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:40 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:40 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:41 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:41 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:42 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:42 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:43 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:43 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:44 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:44 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:45 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:45 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:46 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:46 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:47 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:47 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:38:48 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:16 [Producer] ShareMemoryManager constructed
+2025-04-08 09:43:16 [Producer] Initializing shared memory
+2025-04-08 09:43:16 [Producer] Shared memory initialized successfully
+2025-04-08 09:43:16 [Producer] ShareMemoryManager constructed
+2025-04-08 09:43:16 [Producer] Initializing shared memory
+2025-04-08 09:43:16 [Producer] Shared memory initialized successfully
+2025-04-08 09:43:16 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 1, Type: Image
+2025-04-08 09:43:17 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:17 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:18 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:18 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:19 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:19 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:20 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:20 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:21 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:21 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:22 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:22 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:23 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:23 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:24 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:24 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:25 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:25 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:26 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:26 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:27 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:27 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:28 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:28 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:29 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:29 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:30 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:30 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:31 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:31 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:32 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:32 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:33 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:33 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:34 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:34 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:35 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:36 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:36 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:37 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:37 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:38 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:38 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:39 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:39 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:40 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:40 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:41 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:41 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:42 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:42 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:43 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:43 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:44 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:44 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:45 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:45 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:46 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:46 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:47 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:47 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:48 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:48 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:49 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:49 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:50 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:50 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:51 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:51 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:52 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:52 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:53 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:53 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:54 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:54 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:55 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:55 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:56 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:56 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:57 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:57 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:58 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:58 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:59 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:43:59 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:00 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:00 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:01 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:01 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:02 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:02 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:03 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:03 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:04 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:05 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:05 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:06 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:06 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:07 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:07 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:08 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:08 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:09 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:09 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:10 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:10 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:11 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:11 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:12 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:12 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:13 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:13 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:14 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:14 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:15 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:15 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:16 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:16 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:17 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:17 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:18 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:18 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:19 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:19 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:20 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:20 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:21 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:21 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:22 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:22 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:23 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:23 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:24 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:24 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:25 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:25 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:26 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:26 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:27 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:27 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:28 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:28 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:29 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:29 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:30 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:30 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:31 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:31 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:32 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:32 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:33 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:34 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:34 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:35 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:35 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:36 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:36 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:37 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:37 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:38 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:38 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:39 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:39 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:40 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:40 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:41 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:41 [Producer] Memory not empty, previous data not consumed
+2025-04-08 09:44:46 [Producer] ShareMemoryManager constructed
+2025-04-08 09:44:46 [Producer] Initializing shared memory
+2025-04-08 09:44:46 [Producer] Shared memory initialized successfully
+2025-04-08 09:44:46 [Producer] ShareMemoryManager constructed
+2025-04-08 09:44:46 [Producer] Initializing shared memory
+2025-04-08 09:44:46 [Producer] Shared memory initialized successfully
+2025-04-08 09:44:46 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 1, Type: Image
+2025-04-08 09:44:46 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 1, Type: Image
+2025-04-08 09:44:46 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 2, Type: PointCloud
+2025-04-08 09:44:47 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 2, Type: PointCloud
+2025-04-08 09:44:47 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 3, Type: Image
+2025-04-08 09:44:47 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 3, Type: Image
+2025-04-08 09:44:48 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 4, Type: PointCloud
+2025-04-08 09:44:48 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 4, Type: PointCloud
+2025-04-08 09:44:48 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 5, Type: Image
+2025-04-08 09:44:48 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 5, Type: Image
+2025-04-08 09:44:49 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 6, Type: PointCloud
+2025-04-08 09:44:49 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 6, Type: PointCloud
+2025-04-08 09:44:49 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 7, Type: Image
+2025-04-08 09:44:49 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 7, Type: Image
+2025-04-08 09:44:50 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 8, Type: PointCloud
+2025-04-08 09:44:50 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 8, Type: PointCloud
+2025-04-08 09:44:50 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 9, Type: Image
+2025-04-08 09:44:50 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 9, Type: Image
+2025-04-08 09:44:51 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 10, Type: PointCloud
+2025-04-08 09:44:51 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 10, Type: PointCloud
+2025-04-08 09:44:51 [Producer] Cleaning up resources
+2025-04-08 09:44:51 [Producer] ShareMemoryManager destroyed
+2025-04-08 09:44:51 [Producer] Cleaning up resources
+2025-04-08 09:44:51 [Producer] ShareMemoryManager destroyed
+2025-04-08 09:47:00 [Producer] ShareMemoryManager constructed
+2025-04-08 09:47:00 [Producer] Initializing shared memory
+2025-04-08 09:47:00 [Producer] Shared memory initialized successfully
+2025-04-08 09:47:00 [Producer] ShareMemoryManager constructed
+2025-04-08 09:47:00 [Producer] Initializing shared memory
+2025-04-08 09:47:00 [Producer] Shared memory initialized successfully
+2025-04-08 09:47:00 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 1, Type: Image, Width: 640, Height: 480
+2025-04-08 09:47:00 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 1, Type: Image
+2025-04-08 09:47:00 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 2, Type: PointCloud, Width: 1000, Height: 12
+2025-04-08 09:47:00 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 2, Type: PointCloud
+2025-04-08 09:47:01 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 3, Type: Image, Width: 640, Height: 480
+2025-04-08 09:47:01 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 3, Type: Image
+2025-04-08 09:47:01 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 4, Type: PointCloud, Width: 1000, Height: 12
+2025-04-08 09:47:01 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 4, Type: PointCloud
+2025-04-08 09:47:02 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 5, Type: Image, Width: 640, Height: 480
+2025-04-08 09:47:02 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 5, Type: Image
+2025-04-08 09:47:02 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 6, Type: PointCloud, Width: 1000, Height: 12
+2025-04-08 09:47:02 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 6, Type: PointCloud
+2025-04-08 09:47:03 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 7, Type: Image, Width: 640, Height: 480
+2025-04-08 09:47:03 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 7, Type: Image
+2025-04-08 09:47:04 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 8, Type: PointCloud, Width: 1000, Height: 12
+2025-04-08 09:47:04 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 8, Type: PointCloud
+2025-04-08 09:47:04 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 9, Type: Image, Width: 640, Height: 480
+2025-04-08 09:47:04 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 9, Type: Image
+2025-04-08 09:47:05 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 10, Type: PointCloud, Width: 1000, Height: 12
+2025-04-08 09:47:05 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 10, Type: PointCloud
+2025-04-08 09:52:41 [Producer] ShareMemoryManager constructed
+2025-04-08 09:52:41 [Producer] Initializing shared memory
+2025-04-08 09:52:41 [Producer] Shared memory initialized successfully
+2025-04-08 09:52:41 [Producer] ShareMemoryManager constructed
+2025-04-08 09:52:41 [Producer] Initializing shared memory
+2025-04-08 09:52:41 [Producer] Shared memory initialized successfully
+2025-04-08 09:52:41 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 1, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-08 09:52:41 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 1, Type: Image
+2025-04-08 09:52:41 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 2, Type: PointCloud, Width: 1000, Height: 4, Dimensions: 3
+2025-04-08 09:52:41 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 2, Type: PointCloud
+2025-04-08 09:52:42 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 3, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-08 09:52:42 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 3, Type: Image
+2025-04-08 09:52:42 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 4, Type: PointCloud, Width: 1000, Height: 4, Dimensions: 3
+2025-04-08 09:52:43 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 4, Type: PointCloud
+2025-04-08 09:52:43 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 5, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-08 09:52:43 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 5, Type: Image
+2025-04-08 09:52:44 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 6, Type: PointCloud, Width: 1000, Height: 4, Dimensions: 3
+2025-04-08 09:52:44 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 6, Type: PointCloud
+2025-04-08 09:52:44 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 7, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-08 09:52:44 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 7, Type: Image
+2025-04-08 09:52:45 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 8, Type: PointCloud, Width: 1000, Height: 4, Dimensions: 3
+2025-04-08 09:52:45 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 8, Type: PointCloud
+2025-04-08 09:52:45 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 9, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-08 09:52:45 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 9, Type: Image
+2025-04-08 09:52:46 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 10, Type: PointCloud, Width: 1000, Height: 4, Dimensions: 3
+2025-04-08 09:52:46 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 10, Type: PointCloud
+2025-04-08 09:52:46 [Producer] Cleaning up resources
+2025-04-08 09:52:46 [Producer] ShareMemoryManager destroyed
+2025-04-08 09:52:46 [Producer] Cleaning up resources
+2025-04-08 09:52:46 [Producer] ShareMemoryManager destroyed

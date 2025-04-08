@@ -17,6 +17,8 @@
 #include <vector>
 #include <mutex>
 #include <memory>
+#include <functional>
+#include <thread>
 
 namespace SharedMemory {
 
@@ -96,6 +98,11 @@ namespace SharedMemory {
     #pragma pack(pop)
 
     /**
+     * @brief 数据接收回调函数类型
+     */
+    using DataReceivedCallback = std::function<void(const uint8_t*, size_t, uint32_t, uint32_t, uint32_t)>;
+
+    /**
      * @brief 共享内存管理器类，负责创建和管理共享内存区域
      */
     class ShareMemoryManager {
@@ -113,7 +120,46 @@ namespace SharedMemory {
         ~ShareMemoryManager();
 
         bool Initialize();
-        bool WriteData(const uint8_t* data, size_t size);
+        /**
+         * @brief 写入数据到共享内存
+         * @param data 数据指针
+         * @param dataType 数据类型（0=图像，1=点云）
+         * @param width 宽度（图像）或点数量（点云）
+         * @param height 高度（图像）或每点大小（点云）
+         * @param channels 图像通道数（用于图像类型）
+         * @param dimensions 点云维度（用于点云类型，如3表示XYZ，6表示XYZRGB）
+         * @return 是否成功写入
+         */
+        bool WriteData(const uint8_t* data, uint32_t dataType, uint32_t width, uint32_t height, 
+                      uint32_t channels = 1, uint32_t dimensions = 3);
+        
+        /**
+         * @brief 尝试读取数据
+         * @param buffer 输出缓冲区
+         * @param bufferSize 缓冲区大小
+         * @param dataType 输出数据类型
+         * @param width 输出宽度
+         * @param height 输出高度
+         * @return 是否成功读取数据
+         */
+        bool TryReadData(std::vector<uint8_t>& buffer, uint32_t& dataType, uint32_t& width, uint32_t& height);
+
+        /**
+         * @brief 设置数据接收回调函数
+         * @param callback 回调函数
+         */
+        void SetDataReceivedCallback(DataReceivedCallback callback);
+
+        /**
+         * @brief 启动监听线程
+         */
+        void StartMonitoring();
+
+        /**
+         * @brief 停止监听线程
+         */
+        void StopMonitoring();
+
         std::string GetLastError() const { return m_lastError; }
         void LogStatus(const std::string& operation);
 
@@ -134,9 +180,20 @@ namespace SharedMemory {
         std::string m_lastError;
         uint32_t m_frameId;
 
+        // 新增成员变量
+        bool m_isMonitoring;
+        std::thread m_monitorThread;
+        DataReceivedCallback m_dataCallback;
+        std::mutex m_callbackMutex;
+
         uint32_t CalculateChecksum(const uint8_t* data, size_t size);
         void SetError(ErrorCode code, const std::string& message);
         void Log(const std::string& message);
+        
+        /**
+         * @brief 监听线程函数
+         */
+        void MonitorThreadProc();
     };
 
 } // namespace SharedMemory 
