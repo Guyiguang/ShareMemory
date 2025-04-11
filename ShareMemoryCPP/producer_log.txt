@@ -19578,3 +19578,768 @@
 2025-04-11 10:24:56 [Producer] ShareMemoryManager destroyed
 2025-04-11 10:24:56 [Producer] Cleaning up resources
 2025-04-11 10:24:56 [Producer] ShareMemoryManager destroyed
+2025-04-11 11:31:26 [Producer] ShareMemoryManager constructed
+2025-04-11 11:31:26 [Producer] Initializing shared memory manager
+2025-04-11 11:31:26 [Producer] Shared memory initialized successfully
+2025-04-11 11:31:26 [Producer] ShareMemoryManager constructed
+2025-04-11 11:31:26 [Producer] Initializing shared memory manager
+2025-04-11 11:31:26 [Producer] Shared memory initialized successfully
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 1, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:31:26 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 1
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 2, Type: PointCloud, Points: 1000, Dimensions: 3
+2025-04-11 11:31:26 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 2
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:26 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data written successfully - Size: 160000 bytes, Frame ID: 3, Type: HeightMap, Width: 200, Height: 200, Spacing: [0.1, 0.1]
+2025-04-11 11:31:27 [Producer] Data read successfully - Size: 160000 bytes, Frame ID: 3
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 4, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:31:27 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 4
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:27 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 5, Type: PointCloud, Points: 1000, Dimensions: 3
+2025-04-11 11:31:28 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 5
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data written successfully - Size: 160000 bytes, Frame ID: 6, Type: HeightMap, Width: 200, Height: 200, Spacing: [0.1, 0.1]
+2025-04-11 11:31:28 [Producer] Data read successfully - Size: 160000 bytes, Frame ID: 6
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:28 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 7, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:31:29 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 7
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 8, Type: PointCloud, Points: 1000, Dimensions: 3
+2025-04-11 11:31:29 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 8
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:29 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data written successfully - Size: 160000 bytes, Frame ID: 9, Type: HeightMap, Width: 200, Height: 200, Spacing: [0.1, 0.1]
+2025-04-11 11:31:30 [Producer] Data read successfully - Size: 160000 bytes, Frame ID: 9
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 10, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:31:30 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 10
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:30 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Data not ready
+2025-04-11 11:31:31 [Producer] Cleaning up resources
+2025-04-11 11:31:31 [Producer] ShareMemoryManager destroyed
+2025-04-11 11:31:31 [Producer] Cleaning up resources
+2025-04-11 11:31:31 [Producer] ShareMemoryManager destroyed
+2025-04-11 11:31:41 [Producer] ShareMemoryManager constructed
+2025-04-11 11:31:41 [Producer] Initializing shared memory manager
+2025-04-11 11:31:41 [Producer] Shared memory initialized successfully
+2025-04-11 11:31:41 [Producer] ShareMemoryManager constructed
+2025-04-11 11:31:41 [Producer] Initializing shared memory manager
+2025-04-11 11:31:41 [Producer] Shared memory initialized successfully
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 1, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:31:41 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 1
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:41 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 2, Type: PointCloud, Points: 1000, Dimensions: 3
+2025-04-11 11:31:42 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 2
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data written successfully - Size: 160000 bytes, Frame ID: 3, Type: HeightMap, Width: 200, Height: 200, Spacing: [0.1, 0.1]
+2025-04-11 11:31:42 [Producer] Data read successfully - Size: 160000 bytes, Frame ID: 3
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:42 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 4, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:31:43 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 4
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 5, Type: PointCloud, Points: 1000, Dimensions: 3
+2025-04-11 11:31:43 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 5
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:43 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data written successfully - Size: 160000 bytes, Frame ID: 6, Type: HeightMap, Width: 200, Height: 200, Spacing: [0.1, 0.1]
+2025-04-11 11:31:44 [Producer] Data read successfully - Size: 160000 bytes, Frame ID: 6
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 7, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:31:44 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 7
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:44 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 8, Type: PointCloud, Points: 1000, Dimensions: 3
+2025-04-11 11:31:45 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 8
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data written successfully - Size: 160000 bytes, Frame ID: 9, Type: HeightMap, Width: 200, Height: 200, Spacing: [0.1, 0.1]
+2025-04-11 11:31:45 [Producer] Data read successfully - Size: 160000 bytes, Frame ID: 9
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:45 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 10, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:31:46 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 10
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Data not ready
+2025-04-11 11:31:46 [Producer] Cleaning up resources
+2025-04-11 11:31:46 [Producer] ShareMemoryManager destroyed
+2025-04-11 11:31:46 [Producer] Cleaning up resources
+2025-04-11 11:31:46 [Producer] ShareMemoryManager destroyed
+2025-04-11 11:33:57 [Producer] ShareMemoryManager constructed
+2025-04-11 11:33:57 [Producer] Initializing shared memory manager
+2025-04-11 11:33:57 [Producer] Shared memory initialized successfully
+2025-04-11 11:33:57 [Producer] ShareMemoryManager constructed
+2025-04-11 11:33:57 [Producer] Initializing shared memory manager
+2025-04-11 11:33:57 [Producer] Shared memory initialized successfully
+2025-04-11 11:33:57 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 1, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:33:57 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 1
+2025-04-11 11:33:57 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 2, Type: PointCloud, Points: 1000, Dimensions: 3
+2025-04-11 11:33:58 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 2
+2025-04-11 11:33:58 [Producer] Data written successfully - Size: 160000 bytes, Frame ID: 3, Type: HeightMap, Width: 200, Height: 200, Spacing: [0.1, 0.1]
+2025-04-11 11:33:58 [Producer] Data read successfully - Size: 160000 bytes, Frame ID: 3
+2025-04-11 11:33:59 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 4, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:33:59 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 4
+2025-04-11 11:33:59 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 5, Type: PointCloud, Points: 1000, Dimensions: 3
+2025-04-11 11:33:59 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 5
+2025-04-11 11:34:00 [Producer] Data written successfully - Size: 160000 bytes, Frame ID: 6, Type: HeightMap, Width: 200, Height: 200, Spacing: [0.1, 0.1]
+2025-04-11 11:34:00 [Producer] Data read successfully - Size: 160000 bytes, Frame ID: 6
+2025-04-11 11:34:00 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 7, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:34:00 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 7
+2025-04-11 11:34:01 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 8, Type: PointCloud, Points: 1000, Dimensions: 3
+2025-04-11 11:34:01 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 8
+2025-04-11 11:34:01 [Producer] Data written successfully - Size: 160000 bytes, Frame ID: 9, Type: HeightMap, Width: 200, Height: 200, Spacing: [0.1, 0.1]
+2025-04-11 11:34:01 [Producer] Data read successfully - Size: 160000 bytes, Frame ID: 9
+2025-04-11 11:34:02 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 10, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:34:02 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 10
+2025-04-11 11:34:02 [Producer] Cleaning up resources
+2025-04-11 11:34:02 [Producer] ShareMemoryManager destroyed
+2025-04-11 11:34:02 [Producer] Cleaning up resources
+2025-04-11 11:34:02 [Producer] ShareMemoryManager destroyed
+2025-04-11 11:38:54 [Producer] ShareMemoryManager constructed
+2025-04-11 11:38:54 [Producer] Initializing shared memory manager
+2025-04-11 11:38:54 [Producer] Shared memory initialized successfully
+2025-04-11 11:38:54 [Producer] ShareMemoryManager constructed
+2025-04-11 11:38:54 [Producer] Initializing shared memory manager
+2025-04-11 11:38:54 [Producer] Shared memory initialized successfully
+2025-04-11 11:38:54 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 1, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:38:54 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 1
+2025-04-11 11:38:54 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 2, Type: PointCloud, Points: 1000, Dimensions: 3
+2025-04-11 11:38:54 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 2
+2025-04-11 11:38:55 [Producer] Data written successfully - Size: 160000 bytes, Frame ID: 3, Type: HeightMap, Width: 200, Height: 200, Spacing: [0.1, 0.1]
+2025-04-11 11:38:55 [Producer] Data read successfully - Size: 160000 bytes, Frame ID: 3
+2025-04-11 11:38:55 [Producer] Data written successfully - Size: 921600 bytes, Frame ID: 4, Type: Image, Width: 640, Height: 480, Channels: 3
+2025-04-11 11:38:55 [Producer] Data read successfully - Size: 921600 bytes, Frame ID: 4
+2025-04-11 11:38:56 [Producer] Data written successfully - Size: 12000 bytes, Frame ID: 5, Type: PointCloud, Points: 1000, Dimensions: 3
+2025-04-11 11:38:56 [Producer] Data read successfully - Size: 12000 bytes, Frame ID: 5

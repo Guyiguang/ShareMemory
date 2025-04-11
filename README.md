@@ -33,6 +33,19 @@
 
 ### 2.2 数据结构
 
+#### 统一数据信息 (DataInfo)
+```cpp
+struct DataInfo {
+    uint32_t width;          // 宽度（图像/高度图）或点数量（点云）
+    uint32_t height;         // 高度（图像/高度图）或点维度（点云）
+    uint32_t channels;       // 通道数（图像）
+    float xSpacing;          // X方向间距（高度图）
+    float ySpacing;          // Y方向间距（高度图）
+    uint32_t dataType;       // 数据类型（FrameType枚举）
+    uint64_t timestamp;      // 时间戳
+};
+```
+
 #### 共享内存头部 (SharedMemoryHeader)
 ```cpp
 struct SharedMemoryHeader {
@@ -41,17 +54,14 @@ struct SharedMemoryHeader {
     uint32_t DataSize;       // 数据大小
     uint32_t Checksum;       // 校验和
     uint32_t FrameId;        // 帧ID
-    uint32_t DataType;       // 数据类型
-    uint32_t Width;          // 宽度/点数
-    uint32_t Height;         // 高度/点大小
-    uint32_t Reserved;       // 通道数/维度
+    DataInfo info;           // 统一的数据信息
     char ErrorMsg[128];      // 错误信息
 };
 ```
 
 ### 2.3 数据类型支持
 
-1. **图像数据 (DataType = 0)**
+1. **图像数据 (FrameType::IMAGE)**
    ```cpp
    width    = 图像宽度（像素）
    height   = 图像高度（像素）
@@ -59,15 +69,14 @@ struct SharedMemoryHeader {
    数据大小  = width * height * channels
    ```
 
-2. **点云数据 (DataType = 1)**
+2. **点云数据 (FrameType::POINTCLOUD)**
    ```cpp
-   width      = 点的数量
-   height     = 每个分量的字节大小（通常为sizeof(float)）
-   dimensions = 点的维度（3=XYZ，6=XYZRGB等）
-   数据大小    = width * height * dimensions
+   width    = 点的数量
+   height   = 点维度（3=XYZ）
+   数据大小  = width * height * sizeof(float)
    ```
 
-3. **高度图数据 (DataType = 2)**
+3. **高度图数据 (FrameType::HEIGHTMAP)**
    ```cpp
    width     = 宽度方向的点数
    height    = 高度方向的点数
@@ -109,21 +118,51 @@ if (!producer.Initialize()) {
     // 处理错误
 }
 
-// 写入图像数据
-uint32_t width = 640;
-uint32_t height = 480;
-uint32_t channels = 3; // RGB图像
-std::vector<uint8_t> imageData = GenerateImage(width, height, channels);
-if (!producer.WriteData(imageData.data(), 0, width, height, channels)) {
-    // 处理错误
+// 1. 发送图像数据示例
+{
+    DataInfo info = {};
+    info.width = 640;
+    info.height = 480;
+    info.channels = 3;  // RGB图像
+    info.dataType = static_cast<uint32_t>(FrameType::IMAGE);
+    info.timestamp = std::chrono::duration_cast<std::chrono::milliseconds>(
+        std::chrono::system_clock::now().time_since_epoch()
+    ).count();
+
+    std::vector<uint8_t> imageData = GenerateTestImage(info.width, info.height, info.channels);
+    producer.WriteData(imageData.data(), imageData.size(), info);
 }
 
-// 写入点云数据
-uint32_t pointCount = 1000;
-uint32_t dimensions = 3; // XYZ点云
-std::vector<uint8_t> pointCloudData = GeneratePointCloud(pointCount);
-if (!producer.WriteData(pointCloudData.data(), 1, pointCount, sizeof(float), 0, dimensions)) {
-    // 处理错误
+// 2. 发送点云数据示例
+{
+    DataInfo info = {};
+    info.width = 1000;    // 点的数量
+    info.height = 3;      // XYZ三个维度
+    info.dataType = static_cast<uint32_t>(FrameType::POINTCLOUD);
+    info.timestamp = std::chrono::duration_cast<std::chrono::milliseconds>(
+        std::chrono::system_clock::now().time_since_epoch()
+    ).count();
+
+    std::vector<uint8_t> pointCloudData = GenerateTestPointCloud(info.width);
+    producer.WriteData(pointCloudData.data(), pointCloudData.size(), info);
+}
+
+// 3. 发送高度图数据示例
+{
+    DataInfo info = {};
+    info.width = 200;
+    info.height = 200;
+    info.xSpacing = 0.1f;  // X方向采样间距（米）
+    info.ySpacing = 0.1f;  // Y方向采样间距（米）
+    info.dataType = static_cast<uint32_t>(FrameType::HEIGHTMAP);
+    info.timestamp = std::chrono::duration_cast<std::chrono::milliseconds>(
+        std::chrono::system_clock::now().time_since_epoch()
+    ).count();
+
+    std::vector<float> heightData = GenerateTestHeightMap(info.width, info.height);
+    std::vector<uint8_t> data(heightData.size() * sizeof(float));
+    memcpy(data.data(), heightData.data(), data.size());
+    producer.WriteData(data.data(), data.size(), info);
 }
 ```
 
@@ -139,12 +178,25 @@ if (!consumer.Initialize()) {
 // 设置数据接收回调
 consumer.SetDataReceivedCallback([](const uint8_t* data, size_t size, 
     uint32_t dataType, uint32_t width, uint32_t height) {
-    if (dataType == 0) {
-        // 处理图像数据
-        ProcessImage(data, width, height);
-    } else {
-        // 处理点云数据
-        ProcessPointCloud(data, width);
+    switch (static_cast<FrameType>(dataType)) {
+        case FrameType::IMAGE: {
+            // 处理图像数据
+            const uint8_t* imageData = data;
+            ProcessImage(imageData, width, height);
+            break;
+        }
+        case FrameType::POINTCLOUD: {
+            // 处理点云数据
+            const float* pointCloud = reinterpret_cast<const float*>(data);
+            ProcessPointCloud(pointCloud, width);
+            break;
+        }
+        case FrameType::HEIGHTMAP: {
+            // 处理高度图数据
+            const float* heightMap = reinterpret_cast<const float*>(data);
+            ProcessHeightMap(heightMap, width, height);
+            break;
+        }
     }
 });
 
@@ -155,31 +207,6 @@ consumer.StartMonitoring();
 
 // 停止监听
 consumer.StopMonitoring();
-```
-
-### 4.3 高度图数据传输
-
-```cpp
-// 创建高度图数据
-uint32_t width = 100;
-uint32_t height = 100;
-std::vector<float> heightData(width * height);
-float xSpacing = 0.1f;  // X方向采样间距（米）
-float ySpacing = 0.1f;  // Y方向采样间距（米）
-
-// 填充高度数据...
-
-// 创建共享内存管理器
-SharedMemory::ShareMemoryManager manager("HeightMapData", 1024 * 1024 * 10);  // 10MB
-if (!manager.Initialize()) {
-    // 处理错误
-}
-
-// 写入高度图数据
-bool success = manager.WriteHeightMapData(heightData.data(), width, height, xSpacing, ySpacing);
-if (!success) {
-    // 处理错误
-}
 ```
 
 ## 5. 错误处理
@@ -222,7 +249,6 @@ if (!success) {
 
 1. 使用日志文件
    - producer_log.txt：生产者日志
-   - consumer_log.txt：消费者日志
 
 2. 状态监控
    - 使用`LogStatus()`方法查看当前状态
@@ -242,118 +268,139 @@ if (!success) {
 ```cpp
 int main()
 {
-    // 创建生产者和消费者
-    ShareMemoryManager producer("TestSharedMemory", 1024 * 1024 * 10);
-    ShareMemoryManager consumer("TestSharedMemory", 1024 * 1024 * 10);
-    
-    // 初始化
-    producer.Initialize();
-    consumer.Initialize();
-    
-    // 设置数据接收回调
-    consumer.SetDataReceivedCallback([](const uint8_t* data, size_t size,
-        uint32_t dataType, uint32_t width, uint32_t height) {
-        std::cout << "\n[Consumer] Received data:"
-                 << "\n - Type: " << (dataType == 0 ? "Image" : dataType == 1 ? "PointCloud" : "HeightMap")
-                 << "\n - Size: " << size << " bytes"
-                 << "\n - Width: " << width
-                 << "\n - Height: " << height
-                 << "\n - First byte: 0x" << std::hex << (int)data[0] 
-                 << std::dec << std::endl;
-    });
-    
-    // 启动消费者监听
-    consumer.StartMonitoring();
-    
-    // 交替发送图像、点云和高度图数据
-    bool isImage = true;
-    for (int i = 0; i < 10; ++i) {
-        if (isImage) {
-            // 发送RGB图像
-            auto imageData = GenerateTestImage(640, 480, 3);
-            producer.WriteData(imageData.data(), 0, 640, 480, 3);
-        } else {
-            // 发送XYZ点云
-            auto pointCloud = GenerateTestPointCloud(1000);
-            producer.WriteData(pointCloud.data(), 1, 1000, sizeof(float), 0, 3);
+    try
+    {
+        std::cout << "Shared Memory Test Program Starting..." << std::endl;
+        
+        // 创建生产者和消费者
+        const std::string memoryName = "TestSharedMemory";
+        const size_t memorySize = 1024 * 1024 * 10; // 10MB
+        
+        // 创建并初始化生产者和消费者
+        ShareMemoryManager producer(memoryName, memorySize);
+        ShareMemoryManager consumer(memoryName, memorySize);
+        
+        if (!producer.Initialize() || !consumer.Initialize()) {
+            std::cerr << "Failed to initialize shared memory" << std::endl;
+            return 1;
         }
-        isImage = !isImage;
-        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+
+        // 设置数据接收回调
+        consumer.SetDataReceivedCallback([](const uint8_t* data, size_t size, 
+            uint32_t dataType, uint32_t width, uint32_t height) {
+            std::cout << "\n[Consumer] Received data:"
+                     << "\n - Type: " << (dataType == static_cast<uint32_t>(FrameType::HEIGHTMAP) ? "HeightMap" : 
+                                        (dataType == static_cast<uint32_t>(FrameType::IMAGE) ? "Image" : "PointCloud"))
+                     << "\n - Size: " << size << " bytes"
+                     << "\n - Width: " << width
+                     << "\n - Height: " << height
+                     << "\n - First byte: 0x" << std::hex << (int)data[0] 
+                     << std::dec << std::endl;
+
+            // 根据数据类型进行处理
+            switch (static_cast<FrameType>(dataType)) {
+                case FrameType::IMAGE: {
+                    const uint8_t* imageData = data;
+                    // 处理图像数据...
+                    break;
+                }
+                case FrameType::POINTCLOUD: {
+                    const float* pointCloud = reinterpret_cast<const float*>(data);
+                    // 处理点云数据...
+                    break;
+                }
+                case FrameType::HEIGHTMAP: {
+                    const float* heightMap = reinterpret_cast<const float*>(data);
+                    // 计算高度范围
+                    float minHeight = heightMap[0];
+                    float maxHeight = heightMap[0];
+                    for (size_t i = 1; i < width * height; i++) {
+                        minHeight = std::min(minHeight, heightMap[i]);
+                        maxHeight = std::max(maxHeight, heightMap[i]);
+                    }
+                    std::cout << " - Height range: [" << minHeight << ", " << maxHeight << "]" << std::endl;
+                    break;
+                }
+            }
+        });
+
+        // 启动消费者监听
+        consumer.StartMonitoring();
+        
+        std::cout << "Starting test data exchange..." << std::endl;
+        
+        int frameCount = 0;
+        const int totalFrames = 10; // 发送10帧后退出
+
+        while (frameCount < totalFrames)
+        {
+            std::vector<uint8_t> data;
+            DataInfo info = {};
+            info.timestamp = std::chrono::duration_cast<std::chrono::milliseconds>(
+                std::chrono::system_clock::now().time_since_epoch()
+            ).count();
+            
+            switch (frameCount % 3) {
+                case 0: {  // 发送图像数据
+                    info.channels = 3;
+                    info.width = 640;
+                    info.height = 480;
+                    info.dataType = static_cast<uint32_t>(FrameType::IMAGE);
+                    data = GenerateTestImage(info.width, info.height, info.channels);
+                    std::cout << "Preparing to write RGB image data..." << std::endl;
+                    break;
+                }
+                case 1: {  // 发送点云数据
+                    info.width = 1000;  // 点数量
+                    info.height = 3;    // XYZ维度
+                    info.dataType = static_cast<uint32_t>(FrameType::POINTCLOUD);
+                    data = GenerateTestPointCloud(info.width);
+                    std::cout << "Preparing to write XYZ point cloud data..." << std::endl;
+                    break;
+                }
+                case 2: {  // 发送高度图数据
+                    info.width = 200;
+                    info.height = 200;
+                    info.xSpacing = 0.1f;
+                    info.ySpacing = 0.1f;
+                    info.dataType = static_cast<uint32_t>(FrameType::HEIGHTMAP);
+                    
+                    std::vector<float> heightData = GenerateTestHeightMap(info.width, info.height);
+                    data.resize(heightData.size() * sizeof(float));
+                    memcpy(data.data(), heightData.data(), data.size());
+                    std::cout << "Preparing to write height map data..." << std::endl;
+                    break;
+                }
+            }
+
+            // 写入数据
+            if (producer.WriteData(data.data(), data.size(), info)) {
+                frameCount++;
+            }
+            
+            // 等待下一帧
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
+        }
+
+        // 停止消费者监听
+        consumer.StopMonitoring();
+        
+        std::cout << "Test completed successfully." << std::endl;
+    }
+    catch (const std::exception& e)
+    {
+        std::cerr << "Program exception: " << e.what() << std::endl;
+        return 1;
     }
     
-    // 停止监听
-    consumer.StopMonitoring();
+    return 0;
 }
 ```
 
-### 9.2 高度图数据测试程序
-
-```cpp
-// 生成测试用的高度图数据
-std::vector<float> GenerateTestHeightMap(uint32_t width, uint32_t height)
-{
-    std::vector<float> heightData(width * height);
-    float centerX = width / 2.0f;
-    float centerY = height / 2.0f;
-    float maxRadius = std::min(width, height) / 4.0f;
-
-    // 生成一个圆锥形的高度图
-    for (uint32_t y = 0; y < height; y++) {
-        for (uint32_t x = 0; x < width; x++) {
-            float dx = x - centerX;
-            float dy = y - centerY;
-            float distance = std::sqrt(dx * dx + dy * dy);
-            float height = std::max(0.0f, 1.0f - distance / maxRadius);
-            heightData[y * width + x] = height * 10.0f; // 最大高度10.0
-        }
-    }
-    return heightData;
-}
-
-int main()
-{
-    // 创建生产者和消费者
-    SharedMemory::ShareMemoryManager producer("TestSharedMemory", 1024 * 1024 * 10);
-    SharedMemory::ShareMemoryManager consumer("TestSharedMemory", 1024 * 1024 * 10);
-
-    // 初始化
-    producer.Initialize();
-    consumer.Initialize();
-
-    // 设置数据接收回调
-    consumer.SetDataReceivedCallback([](const uint8_t* data, size_t size,
-        uint32_t dataType, uint32_t width, uint32_t height) {
-        if (dataType == static_cast<uint32_t>(SharedMemory::FrameType::HEIGHTMAP)) {
-            const float* heightData = reinterpret_cast<const float*>(data);
-            // 处理高度图数据...
-        }
-    });
-
-    // 启动消费者监听
-    consumer.StartMonitoring();
-
-    // 生成并发送测试数据
-    uint32_t mapWidth = 100;
-    uint32_t mapHeight = 100;
-    float xSpacing = 0.1f;
-    float ySpacing = 0.1f;
-    auto heightMapData = GenerateTestHeightMap(mapWidth, mapHeight);
-
-    // 发送高度图数据
-    producer.WriteHeightMapData(heightMapData.data(), mapWidth, mapHeight, xSpacing, ySpacing);
-
-    // 等待数据处理
-    std::this_thread::sleep_for(std::chrono::seconds(1));
-
-    // 停止监听
-    consumer.StopMonitoring();
-}
-```
-
-### 9.3 性能测试结果
+### 9.2 性能测试结果
 
 | 数据类型 | 大小 | 传输延迟 | CPU占用 |
 |---------|------|---------|---------|
 | RGB图像 (640x480) | 921.6KB | <1ms | <5% |
-| 点云 (1000点) | 12KB | <1ms | <3% |
-| 高度图 (100x100) | 40KB | <1ms | <2% |
+| 点云 (1000点) | 12KB | <1ms | <4% |
+| 高度图 (200x200) | 160KB | <1ms | <2% |

@@ -1,7 +1,7 @@
 /**
  * @file ShareMemoryManager.h
  * @brief 共享内存管理器的头文件，提供C++端共享内存操作的接口
- * @author AI Assistant
+ * @author gyg
  * @date 2024-04-02
  */
 
@@ -40,76 +40,41 @@ namespace SharedMemory {
     };
 
     /**
-     * @brief 高度图数据结构
-     */
-    #pragma pack(push, 1)
-    struct HeightMapInfo {
-        float xSpacing;      ///< X方向的间距
-        float ySpacing;      ///< Y方向的间距
-        uint32_t width;      ///< 宽度方向的点数
-        uint32_t height;     ///< 高度方向的点数
-        float minHeight;     ///< 最小高度值
-        float maxHeight;     ///< 最大高度值
-    };
-    #pragma pack(pop)
-
-    // Shared memory header structure
-    #pragma pack(push, 1)
-    struct SharedMemoryHeader {
-        uint32_t Magic;          // Magic number for validation (0x12345678)
-        uint32_t Status;         // Status from MemoryStatus enum
-        uint32_t DataSize;       // Size of data in bytes
-        uint32_t Checksum;       // Simple checksum for data validation
-        uint32_t FrameId;        // Incremental frame ID
-        uint32_t DataType;       // 0=Image, 1=PointCloud
-        uint32_t Width;          // Image width or point count
-        uint32_t Height;         // Image height or point size
-        uint32_t Reserved;       // Reserved for future use
-        char ErrorMsg[128];      // Error message
-    };
-    #pragma pack(pop)
-
-    /**
      * @brief 共享内存中的帧数据类型
      */
     enum class FrameType {
         IMAGE = 0,       ///< 图像数据
         POINTCLOUD = 1,  ///< 点云数据
-        HEIGHTMAP = 2    ///< TIFF格式高度图数据
+        HEIGHTMAP = 2    ///< 高度图数据
     };
 
     /**
-     * @brief 共享内存帧头部信息结构
+     * @brief 统一的数据信息结构
      */
-    #pragma pack(push, 1) // 确保内存对齐
-    struct FrameHeader {
-        uint64_t frameId;        ///< 帧ID，递增
-        uint64_t timestamp;      ///< 时间戳，毫秒
-        uint32_t frameType;      ///< 帧类型，对应FrameType枚举
-        uint32_t dataSize;       ///< 实际数据大小（字节）
-        
-        // 针对图像的额外信息
-        uint32_t width;          ///< 图像宽度
-        uint32_t height;         ///< 图像高度
-        uint32_t channels;       ///< 图像通道数
-        
-        // 针对点云的额外信息
-        uint32_t pointCount;     ///< 点的数量
-        uint32_t pointSize;      ///< 每个点的字节大小
+    #pragma pack(push, 1)
+    struct DataInfo {
+        uint32_t width;          ///< 宽度（图像/高度图）或点数量（点云）
+        uint32_t height;         ///< 高度（图像/高度图）或点维度（点云）
+        uint32_t channels;       ///< 通道数（图像）
+        float xSpacing;          ///< X方向间距（高度图）
+        float ySpacing;          ///< Y方向间距（高度图）
+        uint32_t dataType;       ///< 数据类型（FrameType枚举）
+        uint64_t timestamp;      ///< 时间戳
     };
     #pragma pack(pop)
 
     /**
-     * @brief 控制区域结构，存储环形缓冲区的元数据
+     * @brief 共享内存头部结构
      */
     #pragma pack(push, 1)
-    struct ControlBlock {
-        uint32_t bufferSize;             ///< 总缓冲区大小（字节）
-        uint32_t maxFrames;              ///< 最大可存储帧数
-        uint32_t writeIndex;             ///< 写入位置索引
-        uint32_t readIndex;              ///< 读取位置索引
-        uint32_t frameCount;             ///< 当前缓冲区中的帧数量
-        uint64_t lastFrameId;            ///< 最后写入的帧ID
+    struct SharedMemoryHeader {
+        uint32_t Magic;          ///< 用于验证的魔数 (0x12345678)
+        uint32_t Status;         ///< 内存状态，来自 MemoryStatus 枚举
+        uint32_t DataSize;       ///< 数据大小（字节）
+        uint32_t Checksum;       ///< 数据校验和
+        uint32_t FrameId;        ///< 递增的帧ID
+        DataInfo info;           ///< 统一的数据信息
+        char ErrorMsg[128];      ///< 错误信息
     };
     #pragma pack(pop)
 
@@ -137,28 +102,21 @@ namespace SharedMemory {
 
         bool Initialize();
         /**
-         * @brief 写入数据到共享内存
+         * @brief 统一的数据写入接口
          * @param data 数据指针
-         * @param dataType 数据类型（0=图像，1=点云）
-         * @param width 宽度（图像）或点数量（点云）
-         * @param height 高度（图像）或每点大小（点云）
-         * @param channels 图像通道数（用于图像类型）
-         * @param dimensions 点云维度（用于点云类型，如3表示XYZ，6表示XYZRGB）
+         * @param size 数据大小
+         * @param info 数据信息
          * @return 是否成功写入
          */
-        bool WriteData(const uint8_t* data, uint32_t dataType, uint32_t width, uint32_t height, 
-                      uint32_t channels = 1, uint32_t dimensions = 3);
+        bool WriteData(const uint8_t* data, size_t size, const DataInfo& info);
         
         /**
-         * @brief 尝试读取数据
+         * @brief 统一的数据读取接口
          * @param buffer 输出缓冲区
-         * @param bufferSize 缓冲区大小
-         * @param dataType 输出数据类型
-         * @param width 输出宽度
-         * @param height 输出高度
-         * @return 是否成功读取数据
+         * @param info 输出数据信息
+         * @return 是否成功读取
          */
-        bool TryReadData(std::vector<uint8_t>& buffer, uint32_t& dataType, uint32_t& width, uint32_t& height);
+        bool ReadData(std::vector<uint8_t>& buffer, DataInfo& info);
 
         /**
          * @brief 设置数据接收回调函数
@@ -184,21 +142,6 @@ namespace SharedMemory {
          * @return 是否成功清空
          */
         bool ClearMemory();
-
-        /**
-         * @brief 写入高度图数据到共享内存
-         * @param heightData 高度数据数组指针（float类型）
-         * @param width 宽度方向的点数
-         * @param height 高度方向的点数
-         * @param xSpacing X方向的间距
-         * @param ySpacing Y方向的间距
-         * @return 是否成功写入
-         */
-        bool WriteHeightMapData(const float* heightData, 
-                              uint32_t width, 
-                              uint32_t height,
-                              float xSpacing, 
-                              float ySpacing);
 
     private:
         std::string m_name;

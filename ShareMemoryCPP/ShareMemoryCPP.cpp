@@ -1,9 +1,12 @@
 ﻿/**
  * @file ShareMemoryCPP.cpp
  * @brief C++ Shared Memory Test Program
- * @author AI Assistant
+ * @author gyg
  * @date 2024-04-02
  */
+
+#pragma once
+#pragma execution_character_set("utf-8")
 
 #define NOMINMAX  // 防止Windows.h定义min和max宏
 #include <iostream>
@@ -57,38 +60,38 @@ std::vector<uint8_t> GenerateTestPointCloud(int numPoints)
 }
 
 /**
- * @brief 生成测试用的高度图数据
- * @param width 宽度方向的点数
- * @param height 高度方向的点数
- * @return 高度值数组（每个点的z值）
+ * @brief Generate test height map data
+ * @param width Number of points in width direction
+ * @param height Number of points in height direction
+ * @return Array of height values (z value for each point)
  */
 std::vector<float> GenerateTestHeightMap(uint32_t width, uint32_t height)
 {
     std::vector<float> heightData(width * height);
     
-    // 生成一个包含多个正弦波的地形
-    const float frequency1 = 2.0f * 3.14159f / width;  // X方向的频率
-    const float frequency2 = 2.0f * 3.14159f / height; // Y方向的频率
+    // Generate terrain with multiple sine waves
+    const float frequency1 = 2.0f * 3.14159f / width;   // Frequency in X direction
+    const float frequency2 = 2.0f * 3.14159f / height;  // Frequency in Y direction
     
     for (uint32_t y = 0; y < height; y++) {
         for (uint32_t x = 0; x < width; x++) {
-            // 生成多个正弦波叠加的地形
+            // Generate terrain by combining multiple sine waves
             float z = 0.0f;
             
-            // 主要地形波
+            // Main terrain waves
             z += 5.0f * std::sin(frequency1 * x);
             z += 3.0f * std::cos(frequency2 * y);
             
-            // 添加一些小的起伏
+            // Add small variations
             z += 1.0f * std::sin(frequency1 * 3 * x + frequency2 * 2 * y);
             
-            // 添加一个中心隆起
+            // Add central elevation
             float dx = x - width / 2.0f;
             float dy = y - height / 2.0f;
             float distance = std::sqrt(dx * dx + dy * dy);
             z += 2.0f * std::exp(-distance * 0.01f);
             
-            // 存储高度值
+            // Store height value
             heightData[y * width + x] = z;
         }
     }
@@ -102,11 +105,11 @@ int main()
     {
         std::cout << "Shared Memory Test Program Starting..." << std::endl;
         
-        // Create shared memory managers for producer and consumer
+        // Create shared memory manager
         const std::string memoryName = "TestSharedMemory";
         const size_t memorySize = 1024 * 1024 * 10; // 10MB
         
-        // Create producer and consumer with the same memory name
+        // Create producer
         ShareMemoryManager producer(memoryName, memorySize);
         if (!producer.Initialize())
         {
@@ -114,7 +117,7 @@ int main()
             return 1;
         }
         
-        // Create consumer with the same memory name
+        // Create consumer
         ShareMemoryManager consumer(memoryName, memorySize);
         if (!consumer.Initialize())
         {
@@ -125,7 +128,8 @@ int main()
         // Set up consumer callback
         consumer.SetDataReceivedCallback([](const uint8_t* data, size_t size, uint32_t dataType, uint32_t width, uint32_t height) {
             std::cout << "\n[Consumer] Received data:"
-                     << "\n - Type: " << (dataType == static_cast<uint32_t>(FrameType::HEIGHTMAP) ? "HeightMap" : (dataType == 0 ? "Image" : "PointCloud"))
+                     << "\n - Type: " << (dataType == static_cast<uint32_t>(FrameType::HEIGHTMAP) ? "HeightMap" : 
+                                        (dataType == static_cast<uint32_t>(FrameType::IMAGE) ? "Image" : "PointCloud"))
                      << "\n - Size: " << size << " bytes"
                      << "\n - Width: " << width
                      << "\n - Height: " << height
@@ -149,53 +153,52 @@ int main()
         
         std::cout << "Starting test data exchange..." << std::endl;
         
-        bool isImage = true;
         int frameCount = 0;
-        const int totalFrames = 10; // Send 10 frames and then exit
+        const int totalFrames = 10; // Send 10 frames and exit
 
         while (frameCount < totalFrames)
         {
             std::vector<uint8_t> data;
-            uint32_t dataType, width, height, channels, dimensions;
+            DataInfo info = {};
+            info.timestamp = std::chrono::duration_cast<std::chrono::milliseconds>(
+                std::chrono::system_clock::now().time_since_epoch()
+            ).count();
             
-            if (frameCount % 3 == 0) {  // 每三帧发送一次图像数据
+            if (frameCount % 3 == 0) {  // Send image data every three frames
                 // Generate 640x480 RGB test image
-                channels = 3; // RGB image
-                data = GenerateTestImage(640, 480, channels);
-                dataType = 0; // Image
-                width = 640;
-                height = 480;
-                dimensions = 0; // Not used for images
+                info.channels = 3; // RGB image
+                info.width = 640;
+                info.height = 480;
+                info.dataType = static_cast<uint32_t>(FrameType::IMAGE);
+                data = GenerateTestImage(info.width, info.height, info.channels);
                 std::cout << "Preparing to write RGB image data..." << std::endl;
             } 
-            else if (frameCount % 3 == 1) {  // 每三帧发送一次点云数据
-                // Generate point cloud data with 1000 points
-                dimensions = 3; // XYZ point cloud
-                data = GenerateTestPointCloud(1000);
-                dataType = 1; // PointCloud
-                width = 1000; // Number of points
-                height = sizeof(float); // Size per component
-                channels = 0; // Not used for point clouds
+            else if (frameCount % 3 == 1) {  // Send point cloud data every three frames
+                // Generate point cloud with 1000 points
+                info.width = 1000;  // Number of points
+                info.height = 3;    // XYZ dimensions
+                info.dataType = static_cast<uint32_t>(FrameType::POINTCLOUD);
+                data = GenerateTestPointCloud(info.width);
                 std::cout << "Preparing to write XYZ point cloud data..." << std::endl;
             }
-            else {  // 每三帧发送一次高度图数据
-                // 生成200x200的高度图数据
-                width = 200;
-                height = 200;
-                std::vector<float> heightData = GenerateTestHeightMap(width, height);
-                std::cout << "Preparing to write height map data..." << std::endl;
+            else {  // Send height map data every three frames
+                // Generate 200x200 height map
+                info.width = 200;
+                info.height = 200;
+                info.xSpacing = 0.1f;
+                info.ySpacing = 0.1f;
+                info.dataType = static_cast<uint32_t>(FrameType::HEIGHTMAP);
                 
-                // 写入高度图数据
-                bool writeSuccess = producer.WriteHeightMapData(heightData.data(), width, height, 0.1f, 0.1f);
-                if (writeSuccess) {
-                    frameCount++;
-                }
-                std::this_thread::sleep_for(std::chrono::milliseconds(500));
-                continue;  // 跳过后面的WriteData调用
+                std::vector<float> heightData = GenerateTestHeightMap(info.width, info.height);
+                
+                // Convert to byte data
+                data.resize(heightData.size() * sizeof(float));
+                memcpy(data.data(), heightData.data(), data.size());
+                std::cout << "Preparing to write height map data..." << std::endl;
             }
 
-            // Try to write data
-            bool writeSuccess = producer.WriteData(data.data(), dataType, width, height, channels, dimensions);
+            // Write data
+            bool writeSuccess = producer.WriteData(data.data(), data.size(), info);
             
             if (writeSuccess) {
                 frameCount++;

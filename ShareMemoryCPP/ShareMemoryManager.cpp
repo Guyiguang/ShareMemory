@@ -1,7 +1,7 @@
 /**
  * @file ShareMemoryManager.cpp
  * @brief 共享内存管理器的实现文件
- * @author AI Assistant
+ * @author gyg
  * @date 2024-04-02
  */
 
@@ -50,7 +50,7 @@ ShareMemoryManager::~ShareMemoryManager()
 
 bool ShareMemoryManager::Initialize()
 {
-    Log("Initializing shared memory");
+    Log("Initializing shared memory manager");
 
     // Create mutex
     m_hMutex = CreateMutexA(NULL, FALSE, (m_name + "_mutex").c_str());
@@ -70,7 +70,7 @@ bool ShareMemoryManager::Initialize()
     );
 
     if (m_hMapFile == NULL) {
-        SetError(ErrorCode::NoError, "Could not create file mapping object");
+        SetError(ErrorCode::NoError, "Failed to create file mapping object");
         return false;
     }
 
@@ -84,7 +84,7 @@ bool ShareMemoryManager::Initialize()
     );
 
     if (m_pBuffer == nullptr) {
-        SetError(ErrorCode::NoError, "Could not map view of file");
+        SetError(ErrorCode::NoError, "Failed to map view of file");
         return false;
     }
 
@@ -98,32 +98,19 @@ bool ShareMemoryManager::Initialize()
     m_pHeader->DataSize = 0;
     m_pHeader->Checksum = 0;
     m_pHeader->FrameId = 0;
-    m_pHeader->DataType = 0;
-    m_pHeader->Width = 0;
-    m_pHeader->Height = 0;
-    m_pHeader->Reserved = 0;
+    
+    // Initialize data info
+    m_pHeader->info = {};  // Initialize all fields to 0 using default constructor
+    
+    // Clear error message
     memset(m_pHeader->ErrorMsg, 0, sizeof(m_pHeader->ErrorMsg));
 
     Log("Shared memory initialized successfully");
     return true;
 }
 
-bool ShareMemoryManager::WriteData(const uint8_t* data, uint32_t dataType, uint32_t width, uint32_t height,
-                                 uint32_t channels, uint32_t dimensions)
+bool ShareMemoryManager::WriteData(const uint8_t* data, size_t size, const DataInfo& info)
 {
-    // Calculate data size based on type and parameters
-    size_t size = 0;
-    if (dataType == static_cast<uint32_t>(FrameType::IMAGE)) { // Image
-        size = width * height * channels;
-    } else if (dataType == static_cast<uint32_t>(FrameType::POINTCLOUD)) { // Point cloud
-        size = width * sizeof(float) * dimensions;
-    } else if (dataType == static_cast<uint32_t>(FrameType::HEIGHTMAP)) { // Height map
-        size = width * height * sizeof(float);
-    } else {
-        Log("Invalid data type");
-        return false;
-    }
-
     if (!m_pBuffer || size > (m_size - sizeof(SharedMemoryHeader))) {
         Log("Data size exceeds buffer capacity");
         return false;
@@ -149,11 +136,8 @@ bool ShareMemoryManager::WriteData(const uint8_t* data, uint32_t dataType, uint3
             m_pHeader->DataSize = static_cast<uint32_t>(size);
             m_pHeader->FrameId = ++m_frameId;
 
-            // Set data type and dimensions
-            m_pHeader->DataType = dataType;
-            m_pHeader->Width = width;
-            m_pHeader->Height = height;
-            m_pHeader->Reserved = dataType == static_cast<uint32_t>(FrameType::IMAGE) ? channels : dimensions;
+            // Copy data info
+            m_pHeader->info = info;
 
             // Copy data
             memcpy(m_pData, data, size);
@@ -169,22 +153,24 @@ bool ShareMemoryManager::WriteData(const uint8_t* data, uint32_t dataType, uint3
                << " bytes, Frame ID: " << m_frameId
                << ", Type: ";
             
-            // 根据数据类型输出不同的信息
-            if (dataType == static_cast<uint32_t>(FrameType::IMAGE)) {
-                ss << "Image"
-                   << ", Width: " << width
-                   << ", Height: " << height
-                   << ", Channels: " << channels;
-            }
-            else if (dataType == static_cast<uint32_t>(FrameType::POINTCLOUD)) {
-                ss << "PointCloud"
-                   << ", Points: " << width
-                   << ", Dimensions: " << dimensions;
-            }
-            else if (dataType == static_cast<uint32_t>(FrameType::HEIGHTMAP)) {
-                ss << "HeightMap"
-                   << ", Width: " << width
-                   << ", Height: " << height;
+            switch (static_cast<FrameType>(info.dataType)) {
+                case FrameType::IMAGE:
+                    ss << "Image"
+                       << ", Width: " << info.width
+                       << ", Height: " << info.height
+                       << ", Channels: " << info.channels;
+                    break;
+                case FrameType::POINTCLOUD:
+                    ss << "PointCloud"
+                       << ", Points: " << info.width
+                       << ", Dimensions: " << info.height;
+                    break;
+                case FrameType::HEIGHTMAP:
+                    ss << "HeightMap"
+                       << ", Width: " << info.width
+                       << ", Height: " << info.height
+                       << ", Spacing: [" << info.xSpacing << ", " << info.ySpacing << "]";
+                    break;
             }
 
             Log(ss.str());
@@ -193,6 +179,70 @@ bool ShareMemoryManager::WriteData(const uint8_t* data, uint32_t dataType, uint3
     }
     catch (const std::exception& e) {
         Log(std::string("Exception during write: ") + e.what());
+        success = false;
+    }
+
+    ReleaseMutex(m_hMutex);
+    return success;
+}
+
+bool ShareMemoryManager::ReadData(std::vector<uint8_t>& buffer, DataInfo& info)
+{
+    if (!m_pBuffer) {
+        Log("Shared memory not initialized");
+        return false;
+    }
+
+    // Wait for mutex
+    DWORD waitResult = WaitForSingleObject(m_hMutex, 5000);
+    if (waitResult != WAIT_OBJECT_0) {
+        Log("Failed to acquire mutex");
+        return false;
+    }
+
+    bool success = false;
+    try {
+        // Check if data is ready
+        if (m_pHeader->Status != static_cast<uint32_t>(MemoryStatus::Ready)) {
+            // Only log if status is not Empty (to reduce noise)
+            if (m_pHeader->Status != static_cast<uint32_t>(MemoryStatus::Empty)) {
+                Log("Data not ready");
+            }
+            success = false;
+        }
+        else {
+            // Get data size
+            size_t dataSize = m_pHeader->DataSize;
+
+            // Resize buffer
+            buffer.resize(dataSize);
+
+            // Copy data
+            memcpy(buffer.data(), m_pData, dataSize);
+
+            // Verify checksum
+            uint32_t checksum = CalculateChecksum(buffer.data(), dataSize);
+            if (checksum != m_pHeader->Checksum) {
+                Log("Checksum verification failed");
+                success = false;
+            }
+            else {
+                // Copy data info
+                info = m_pHeader->info;
+
+                // Set status to empty
+                m_pHeader->Status = static_cast<uint32_t>(MemoryStatus::Empty);
+
+                std::stringstream ss;
+                ss << "Data read successfully - Size: " << dataSize 
+                   << " bytes, Frame ID: " << m_pHeader->FrameId;
+                Log(ss.str());
+                success = true;
+            }
+        }
+    }
+    catch (const std::exception& e) {
+        Log(std::string("Exception during read: ") + e.what());
         success = false;
     }
 
@@ -286,10 +336,11 @@ bool ShareMemoryManager::ClearMemory()
         m_pHeader->DataSize = 0;
         m_pHeader->Checksum = 0;
         m_pHeader->FrameId = 0;
-        m_pHeader->DataType = 0;
-        m_pHeader->Width = 0;
-        m_pHeader->Height = 0;
-        m_pHeader->Reserved = 0;
+        
+        // Reset data info
+        m_pHeader->info = {};  // Initialize all fields to 0
+        
+        // Clear error message
         memset(m_pHeader->ErrorMsg, 0, sizeof(m_pHeader->ErrorMsg));
 
         // Reset frame ID counter
@@ -300,162 +351,6 @@ bool ShareMemoryManager::ClearMemory()
     }
     catch (const std::exception& e) {
         Log(std::string("Exception during clear: ") + e.what());
-        success = false;
-    }
-
-    ReleaseMutex(m_hMutex);
-    return success;
-}
-
-bool ShareMemoryManager::WriteHeightMapData(const float* heightData, 
-                                          uint32_t width, 
-                                          uint32_t height,
-                                          float xSpacing, 
-                                          float ySpacing)
-{
-    if (!m_pBuffer || !heightData) {
-        Log("Buffer or height data is null");
-        return false;
-    }
-
-    // 计算数据大小
-    size_t dataSize = width * height * sizeof(float);
-    
-    // 检查数据大小是否超出限制
-    if (dataSize > m_size - sizeof(SharedMemoryHeader)) {
-        Log("Height map data too large");
-        return false;
-    }
-
-    // 获取互斥锁
-    DWORD waitResult = WaitForSingleObject(m_hMutex, 1000);
-    if (waitResult != WAIT_OBJECT_0) {
-        Log("Failed to acquire mutex");
-        return false;
-    }
-
-    bool success = false;
-    try {
-        // 检查内存状态
-        if (m_pHeader->Status != static_cast<uint32_t>(MemoryStatus::Empty)) {
-            Log("Memory not empty, previous data not consumed");
-            success = false;
-        }
-        else {
-            // 计算高度范围
-            float minHeight = heightData[0];
-            float maxHeight = heightData[0];
-            for (size_t i = 1; i < width * height; i++) {
-                if (heightData[i] < minHeight) minHeight = heightData[i];
-                if (heightData[i] > maxHeight) maxHeight = heightData[i];
-            }
-
-            // 设置状态为写入中
-            m_pHeader->Status = static_cast<uint32_t>(MemoryStatus::Writing);
-            m_pHeader->DataSize = static_cast<uint32_t>(dataSize);
-            m_pHeader->FrameId = ++m_frameId;
-            m_pHeader->DataType = 2; // 高度图类型
-            m_pHeader->Width = width;
-            m_pHeader->Height = height;
-
-            // 复制高度图数据
-            memcpy(m_pData, heightData, dataSize);
-
-            // 计算校验和
-            m_pHeader->Checksum = CalculateChecksum(reinterpret_cast<const uint8_t*>(heightData), dataSize);
-            
-            // 更新状态为就绪
-            m_pHeader->Status = static_cast<uint32_t>(MemoryStatus::Ready);
-
-            std::stringstream ss;
-            ss << "Height map data written successfully - "
-               << "Size: " << dataSize << " bytes, "
-               << "Frame ID: " << m_frameId << ", "
-               << "Width: " << width << ", "
-               << "Height: " << height << ", "
-               << "X Spacing: " << xSpacing << ", "
-               << "Y Spacing: " << ySpacing << ", "
-               << "Height Range: [" << minHeight << ", " << maxHeight << "]";
-            Log(ss.str());
-            success = true;
-        }
-    }
-    catch (const std::exception& e) {
-        Log(std::string("Exception during write: ") + e.what());
-        success = false;
-    }
-
-    ReleaseMutex(m_hMutex);
-    return success;
-}
-
-bool ShareMemoryManager::TryReadData(std::vector<uint8_t>& buffer, uint32_t& dataType, uint32_t& width, uint32_t& height)
-{
-    if (!m_pBuffer) {
-        Log("Shared memory not initialized");
-        return false;
-    }
-
-    // Wait for mutex
-    DWORD waitResult = WaitForSingleObject(m_hMutex, 5000);
-    if (waitResult != WAIT_OBJECT_0) {
-        Log("Failed to acquire mutex");
-        return false;
-    }
-
-    bool success = false;
-    try {
-        // Validate magic number
-        if (m_pHeader->Magic != 0x12345678) {
-            Log("Invalid magic number");
-            success = false;
-        }
-        // Check if data is ready
-        else if (m_pHeader->Status != static_cast<uint32_t>(MemoryStatus::Ready)) {
-            success = false;
-        }
-        else {
-            // Read data
-            buffer.resize(m_pHeader->DataSize);
-            memcpy(buffer.data(), m_pData, m_pHeader->DataSize);
-
-            // Validate checksum
-            uint32_t checksum = CalculateChecksum(buffer.data(), buffer.size());
-            if (checksum != m_pHeader->Checksum) {
-                Log("Checksum mismatch");
-                success = false;
-            }
-            else {
-                // Get metadata
-                dataType = m_pHeader->DataType;
-                width = m_pHeader->Width;
-                height = m_pHeader->Height;
-
-                // Mark memory as empty
-                m_pHeader->Status = static_cast<uint32_t>(MemoryStatus::Empty);
-
-                std::stringstream ss;
-                ss << "Data read successfully - Size: " << buffer.size()
-                   << " bytes, Frame ID: " << m_pHeader->FrameId
-                   << ", Type: ";
-
-                if (dataType == static_cast<uint32_t>(FrameType::IMAGE)) {
-                    ss << "Image";
-                }
-                else if (dataType == static_cast<uint32_t>(FrameType::POINTCLOUD)) {
-                    ss << "PointCloud";
-                }
-                else if (dataType == static_cast<uint32_t>(FrameType::HEIGHTMAP)) {
-                    ss << "HeightMap";
-                }
-
-                Log(ss.str());
-                success = true;
-            }
-        }
-    }
-    catch (const std::exception& e) {
-        Log(std::string("Exception during read: ") + e.what());
         success = false;
     }
 
@@ -490,16 +385,17 @@ void ShareMemoryManager::StopMonitoring()
 void ShareMemoryManager::MonitorThreadProc()
 {
     std::vector<uint8_t> buffer;
-    uint32_t dataType = 0, width = 0, height = 0;
+    DataInfo info;
+    const int readInterval = 50; // Increase interval to 50ms to reduce CPU usage
 
     while (m_isMonitoring) {
-        if (TryReadData(buffer, dataType, width, height)) {
+        if (ReadData(buffer, info)) {
             std::lock_guard<std::mutex> lock(m_callbackMutex);
             if (m_dataCallback) {
-                m_dataCallback(buffer.data(), buffer.size(), dataType, width, height);
+                m_dataCallback(buffer.data(), buffer.size(), info.dataType, info.width, info.height);
             }
         }
-        std::this_thread::sleep_for(std::chrono::milliseconds(10));
+        std::this_thread::sleep_for(std::chrono::milliseconds(readInterval));
     }
 }
 
