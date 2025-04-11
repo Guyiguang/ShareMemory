@@ -113,10 +113,15 @@ bool ShareMemoryManager::WriteData(const uint8_t* data, uint32_t dataType, uint3
 {
     // Calculate data size based on type and parameters
     size_t size = 0;
-    if (dataType == 0) { // Image
+    if (dataType == static_cast<uint32_t>(FrameType::IMAGE)) { // Image
         size = width * height * channels;
-    } else { // Point cloud
+    } else if (dataType == static_cast<uint32_t>(FrameType::POINTCLOUD)) { // Point cloud
         size = width * sizeof(float) * dimensions;
+    } else if (dataType == static_cast<uint32_t>(FrameType::HEIGHTMAP)) { // Height map
+        size = width * height * sizeof(float);
+    } else {
+        Log("Invalid data type");
+        return false;
     }
 
     if (!m_pBuffer || size > (m_size - sizeof(SharedMemoryHeader))) {
@@ -148,7 +153,7 @@ bool ShareMemoryManager::WriteData(const uint8_t* data, uint32_t dataType, uint3
             m_pHeader->DataType = dataType;
             m_pHeader->Width = width;
             m_pHeader->Height = height;
-            m_pHeader->Reserved = dataType == 0 ? channels : dimensions; // Store channels/dimensions in Reserved field
+            m_pHeader->Reserved = dataType == static_cast<uint32_t>(FrameType::IMAGE) ? channels : dimensions;
 
             // Copy data
             memcpy(m_pData, data, size);
@@ -162,11 +167,26 @@ bool ShareMemoryManager::WriteData(const uint8_t* data, uint32_t dataType, uint3
             std::stringstream ss;
             ss << "Data written successfully - Size: " << size 
                << " bytes, Frame ID: " << m_frameId
-               << ", Type: " << (dataType == 0 ? "Image" : "PointCloud")
-               << ", Width: " << width
-               << ", Height: " << height
-               << ", " << (dataType == 0 ? "Channels: " : "Dimensions: ") 
-               << (dataType == 0 ? channels : dimensions);
+               << ", Type: ";
+            
+            // 根据数据类型输出不同的信息
+            if (dataType == static_cast<uint32_t>(FrameType::IMAGE)) {
+                ss << "Image"
+                   << ", Width: " << width
+                   << ", Height: " << height
+                   << ", Channels: " << channels;
+            }
+            else if (dataType == static_cast<uint32_t>(FrameType::POINTCLOUD)) {
+                ss << "PointCloud"
+                   << ", Points: " << width
+                   << ", Dimensions: " << dimensions;
+            }
+            else if (dataType == static_cast<uint32_t>(FrameType::HEIGHTMAP)) {
+                ss << "HeightMap"
+                   << ", Width: " << width
+                   << ", Height: " << height;
+            }
+
             Log(ss.str());
             success = true;
         }
@@ -287,6 +307,88 @@ bool ShareMemoryManager::ClearMemory()
     return success;
 }
 
+bool ShareMemoryManager::WriteHeightMapData(const float* heightData, 
+                                          uint32_t width, 
+                                          uint32_t height,
+                                          float xSpacing, 
+                                          float ySpacing)
+{
+    if (!m_pBuffer || !heightData) {
+        Log("Buffer or height data is null");
+        return false;
+    }
+
+    // 计算数据大小
+    size_t dataSize = width * height * sizeof(float);
+    
+    // 检查数据大小是否超出限制
+    if (dataSize > m_size - sizeof(SharedMemoryHeader)) {
+        Log("Height map data too large");
+        return false;
+    }
+
+    // 获取互斥锁
+    DWORD waitResult = WaitForSingleObject(m_hMutex, 1000);
+    if (waitResult != WAIT_OBJECT_0) {
+        Log("Failed to acquire mutex");
+        return false;
+    }
+
+    bool success = false;
+    try {
+        // 检查内存状态
+        if (m_pHeader->Status != static_cast<uint32_t>(MemoryStatus::Empty)) {
+            Log("Memory not empty, previous data not consumed");
+            success = false;
+        }
+        else {
+            // 计算高度范围
+            float minHeight = heightData[0];
+            float maxHeight = heightData[0];
+            for (size_t i = 1; i < width * height; i++) {
+                if (heightData[i] < minHeight) minHeight = heightData[i];
+                if (heightData[i] > maxHeight) maxHeight = heightData[i];
+            }
+
+            // 设置状态为写入中
+            m_pHeader->Status = static_cast<uint32_t>(MemoryStatus::Writing);
+            m_pHeader->DataSize = static_cast<uint32_t>(dataSize);
+            m_pHeader->FrameId = ++m_frameId;
+            m_pHeader->DataType = 2; // 高度图类型
+            m_pHeader->Width = width;
+            m_pHeader->Height = height;
+
+            // 复制高度图数据
+            memcpy(m_pData, heightData, dataSize);
+
+            // 计算校验和
+            m_pHeader->Checksum = CalculateChecksum(reinterpret_cast<const uint8_t*>(heightData), dataSize);
+            
+            // 更新状态为就绪
+            m_pHeader->Status = static_cast<uint32_t>(MemoryStatus::Ready);
+
+            std::stringstream ss;
+            ss << "Height map data written successfully - "
+               << "Size: " << dataSize << " bytes, "
+               << "Frame ID: " << m_frameId << ", "
+               << "Width: " << width << ", "
+               << "Height: " << height << ", "
+               << "X Spacing: " << xSpacing << ", "
+               << "Y Spacing: " << ySpacing << ", "
+               << "Height Range: [" << minHeight << ", " << maxHeight << "]";
+            Log(ss.str());
+            success = true;
+        }
+    }
+    catch (const std::exception& e) {
+        Log(std::string("Exception during write: ") + e.what());
+        success = false;
+    }
+
+    ReleaseMutex(m_hMutex);
+    return success;
+}
+
 bool ShareMemoryManager::TryReadData(std::vector<uint8_t>& buffer, uint32_t& dataType, uint32_t& width, uint32_t& height)
 {
     if (!m_pBuffer) {
@@ -335,7 +437,18 @@ bool ShareMemoryManager::TryReadData(std::vector<uint8_t>& buffer, uint32_t& dat
                 std::stringstream ss;
                 ss << "Data read successfully - Size: " << buffer.size()
                    << " bytes, Frame ID: " << m_pHeader->FrameId
-                   << ", Type: " << (dataType == 0 ? "Image" : "PointCloud");
+                   << ", Type: ";
+
+                if (dataType == static_cast<uint32_t>(FrameType::IMAGE)) {
+                    ss << "Image";
+                }
+                else if (dataType == static_cast<uint32_t>(FrameType::POINTCLOUD)) {
+                    ss << "PointCloud";
+                }
+                else if (dataType == static_cast<uint32_t>(FrameType::HEIGHTMAP)) {
+                    ss << "HeightMap";
+                }
+
                 Log(ss.str());
                 success = true;
             }

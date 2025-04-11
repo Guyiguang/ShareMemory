@@ -7,6 +7,7 @@
 
 #pragma once
 
+#define NOMINMAX  // 防止Windows.h定义min和max宏
 // 确保Windows.h包含正确
 #ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
@@ -38,6 +39,20 @@ namespace SharedMemory {
         ChecksumError = 3
     };
 
+    /**
+     * @brief 高度图数据结构
+     */
+    #pragma pack(push, 1)
+    struct HeightMapInfo {
+        float xSpacing;      ///< X方向的间距
+        float ySpacing;      ///< Y方向的间距
+        uint32_t width;      ///< 宽度方向的点数
+        uint32_t height;     ///< 高度方向的点数
+        float minHeight;     ///< 最小高度值
+        float maxHeight;     ///< 最大高度值
+    };
+    #pragma pack(pop)
+
     // Shared memory header structure
     #pragma pack(push, 1)
     struct SharedMemoryHeader {
@@ -59,7 +74,8 @@ namespace SharedMemory {
      */
     enum class FrameType {
         IMAGE = 0,       ///< 图像数据
-        POINTCLOUD = 1   ///< 点云数据
+        POINTCLOUD = 1,  ///< 点云数据
+        HEIGHTMAP = 2    ///< TIFF格式高度图数据
     };
 
     /**
@@ -168,6 +184,21 @@ namespace SharedMemory {
          * @return 是否成功清空
          */
         bool ClearMemory();
+
+        /**
+         * @brief 写入高度图数据到共享内存
+         * @param heightData 高度数据数组指针（float类型）
+         * @param width 宽度方向的点数
+         * @param height 高度方向的点数
+         * @param xSpacing X方向的间距
+         * @param ySpacing Y方向的间距
+         * @return 是否成功写入
+         */
+        bool WriteHeightMapData(const float* heightData, 
+                              uint32_t width, 
+                              uint32_t height,
+                              float xSpacing, 
+                              float ySpacing);
 
     private:
         std::string m_name;
