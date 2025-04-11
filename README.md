@@ -67,6 +67,8 @@ struct SharedMemoryHeader {
    height   = 图像高度（像素）
    channels = 图像通道数（1=灰度图，3=RGB，4=RGBA）
    数据大小  = width * height * channels
+   数据格式  = RGBRGBRGB...（交错存储，每个像素的RGB值连续存储）
+              示例：R1G1B1 R2G2B2 R3G3B3...
    ```
 
 2. **点云数据 (FrameType::POINTCLOUD)**
@@ -74,15 +76,21 @@ struct SharedMemoryHeader {
    width    = 点的数量
    height   = 点维度（3=XYZ）
    数据大小  = width * height * sizeof(float)
+   数据格式  = XYZXYZXYZ...（交错存储，每个点的XYZ坐标连续存储）
+              示例：X1Y1Z1 X2Y2Z2 X3Y3Z3...
+              数据类型：float（32位浮点数）
    ```
 
 3. **高度图数据 (FrameType::HEIGHTMAP)**
    ```cpp
    width     = 宽度方向的点数
    height    = 高度方向的点数
-   xSpacing  = X方向的采样间距
-   ySpacing  = Y方向的采样间距
+   xSpacing  = X方向的采样间距（米）
+   ySpacing  = Y方向的采样间距（米）
    数据大小   = width * height * sizeof(float)
+   数据格式   = ZZZ...（行优先存储，每个点的高度值连续存储）
+               示例：Z11Z12Z13... Z21Z22Z23...（Zij表示第i行第j列的高度值）
+               数据类型：float（32位浮点数）
    ```
 
 ## 3. 工作流程
